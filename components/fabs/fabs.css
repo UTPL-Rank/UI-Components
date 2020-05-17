@@ -1,0 +1,37 @@
+body {
+    background-color: #D8D8D8;
+}
+
+.fab {
+    display: inline-block;
+    padding: 16px;
+    background-color: #03DAC5;
+    border: none;
+    font-size: 18px;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.14);
+}
+
+.fab:hover, .fab:focus {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.295), 0px 1px 10px rgba(0, 0, 0, 0.199), 0px 4px 5px rgba(0, 0, 0, 0.267);
+}
+
+.mini-fab {
+    display: inline-block;
+    padding: 8px;
+    background-color: #03DAC5;
+    border: none;
+    font-size: 18px;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.14);
+}
+
+.mini-fab:hover, .mini-fab:focus {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.295), 0px 1px 10px rgba(0, 0, 0, 0.199), 0px 4px 5px rgba(0, 0, 0, 0.267);
+}
