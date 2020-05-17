@@ -1,76 +1,220 @@
-body{background-color:  #D8D8D8;}
+body {
+    background-color: #D8D8D8;
+}
 
-.btn a{
+.btn {
     display: inline-block;
-    padding: 6px 10px; 
-    
-    font-size: large;
-    text-decoration: none; 
-    text-transform: uppercase; 
+    padding: 10px 7px;
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
     font-family: 'Helvetica';
-    border-radius: 6px;
-    letter-spacing: 2px;
     font-weight: 600;
+    color: #6200EE;
     transition: ease-in-out 0.3s;
-    
+    cursor: pointer;
+    letter-spacing: 2px;
+    border-radius: 4px;
 }
+
+.btn:hover:not(:disabled), .btn:hover:not(.disabled) {
+    background-color: rgba(99, 0, 238, 0.089);
+}
+
+.btn:focus:not(:disabled), .btn:focus:not(.disabled) {
+    background-color: rgba(99, 0, 238, 0.192);
+}
+
+.btn:disabled, .btn.disabled {
+    color: #00000038;
+    pointer-events: none;
+}
+
+/* Button primary */
+
+.btn.btn-primary {
+    color: teal;
+}
+
+.btn.btn-primary:hover:not(:disabled), .btn.btn-primary:hover:not(.disabled) {
+    background-color: rgba(0, 128, 128, 0.15);
+}
+
+.btn.btn-primary:focus:not(:disabled), .btn.btn-primary:focus:not(.disabled) {
+    background-color: rgba(0, 128, 128, 0.301);
+}
+
+/* Button Warn */
+
+.btn.btn-warn {
+    color: rgb(209, 185, 50);
+}
+
+.btn.btn-warn:hover:not(:disabled), .btn.btn-warn:hover:not(.disabled) {
+    background-color: rgba(209, 185, 50, 0.157);
+}
+
+.btn.btn-warn:focus:not(:disabled), .btn.btn-warn:focus:not(.disabled) {
+    background-color: rgba(209, 185, 50, 0.425);
+}
+
+/* Button Danger */
+
+.btn.btn-danger {
+    color: rgb(128, 0, 28);
+}
+
+.btn.btn-danger:hover:not(:disabled), .btn.btn-danger:hover:not(.disabled) {
+    background-color: rgba(128, 0, 21, 0.15);
+}
+
+.btn.btn-danger:focus:not(:disabled), .btn.btn-danger:focus:not(.disabled) {
+    background-color: rgba(128, 0, 21, 0.301);
+}
+
+/*  */
+
+/*  */
+
+/* Btn Outline */
+
+/*  */
+
+/*  */
+
+.btn-outline {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Helvetica';
+    font-weight: 600;
+    color: #6200EE;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border-radius: 4px;
+}
+
+.btn-outline:hover:not(:disabled), .btn-outline:hover:not(.disabled) {
+    background-color: rgba(99, 0, 238, 0.089);
+}
+
+.btn-outline:focus:not(:disabled), .btn-outline:focus:not(.disabled) {
+    background-color: rgba(99, 0, 238, 0.192);
+}
+
+.btn-outline:disabled, .btn-outline.disabled {
+    color: #00000038;
+    pointer-events: none;
+}
+
+/* Button primary */
+
+.btn-outline.btn-primary {
+    color: teal;
+}
+
+.btn-outline.btn-primary:hover:not(:disabled), .btn-outline.btn-primary:hover:not(.disabled) {
+    background-color: rgba(0, 128, 128, 0.15);
+}
+
+.btn-outline.btn-primary:focus:not(:disabled), .btn-outline.btn-primary:focus:not(.disabled) {
+    background-color: rgba(0, 128, 128, 0.301);
+}
+
+/* Button Warn */
+
+.btn-outline.btn-warn {
+    color: rgb(209, 185, 50);
+}
+
+.btn-outline.btn-warn:hover:not(:disabled), .btn-outline.btn-warn:hover:not(.disabled) {
+    background-color: rgba(209, 185, 50, 0.157);
+}
+
+.btn-outline.btn-warn:focus:not(:disabled), .btn-outline.btn-warn:focus:not(.disabled) {
+    background-color: rgba(209, 185, 50, 0.425);
+}
+
+/* Button Danger */
+
+.btn-outline.btn-danger {
+    color: rgb(128, 0, 28);
+}
+
+.btn-outline.btn-danger:hover:not(:disabled), .btn-outline.btn-danger:hover:not(.disabled) {
+    background-color: rgba(128, 0, 21, 0.15);
+}
+
+.btn-outline.btn-danger:focus:not(:disabled), .btn-outline.btn-danger:focus:not(.disabled) {
+    background-color: rgba(128, 0, 21, 0.301);
+}
+
 /*.........................................*/
-#enabled{
-    color: #6200EE;   
+
+/* #enabled {
+    color: #6200EE;
 }
-#enabled:hover{
-    color:rgb(64, 3, 150);
+
+#enabled:hover {
+    color: rgb(64, 3, 150);
     text-shadow: -3px 3px 10px rgb(255, 255, 255);
-}
+} */
 
 /*.........................................*/
-#hovered{
+
+/* #hovered {
     background-color: rgb(241, 241, 241);
-    color:#37B799; 
+    color: #37B799;
 }
-#hovered:hover{
+
+#hovered:hover {
     background-color: #37B799;
-    color:rgb(241, 241, 241);
-}
-
+    color: rgb(241, 241, 241);
+} */
 
 /*.........................................*/
-#focused{
-    background-color:rgb(241, 241, 241);
-    color:rgb(250, 198, 67);  
+
+/* #focused {
+    background-color: rgb(241, 241, 241);
+    color: rgb(250, 198, 67);
 }
-#focused:focus{
+
+#focused:focus {
     background-color: rgb(250, 198, 67);
-    color:rgb(241, 241, 241);
-}
-
+    color: rgb(241, 241, 241);
+} */
 
 /*.........................................*/
-#presed{
-    background-color:rgb(241, 241, 241);
+
+/* #presed {
+    background-color: rgb(241, 241, 241);
     color: #E3257E;
     margin-left: 10px;
     margin-left: 10px;
     box-shadow: 0px 3px 10px #000;
-    
-}
-#presed:hover{
-    background-color: rgb(228, 85, 152);
-    color:rgb(241, 241, 241);
-}
-#presed:focus{
-    background-color: rgb(170, 0, 79);
-    color:rgb(255, 251, 251);
 }
 
+#presed:hover {
+    background-color: rgb(228, 85, 152);
+    color: rgb(241, 241, 241);
+}
+
+#presed:focus {
+    background-color: rgb(170, 0, 79);
+    color: rgb(255, 251, 251);
+} */
 
 /*.........................................*/
-#disabledbutton{
-    background-color:none;
-    color:#9E9E9E;
+
+/* #disabledbutton {
+    background-color: none;
+    color: #9E9E9E;
     border-color: none;
-}
-
-
-
-
+} */
