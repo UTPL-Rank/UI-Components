@@ -180,5 +180,26 @@ body {
     border: 1px solid #6200EE;
     letter-spacing: 1.25px;
     color: #FFFFFF;
+}
+
+/* Button Contained Hover */
+.btn-contained:hover:not(:disabled), .btn-contained:hover:not(.disabled) {
+    background: #FFFFFF;
+    color: #6200EE;
     
+}
+
+/* Button Contained Focused */
+.btn-contained:focus:not(:disabled), .btn-contained:focus:not(.disabled) {
+    border: 1px solid rgba(44, 3, 83, 0.979);
+    background-color: rgba(44, 3, 83, 0.979);
+    color: #FFFFFF;
+}
+
+/* Button Contained Disable */
+.btn-contained:disabled, .btn-contained.disabled {
+    color:rgba(0, 0, 0, 0.38);
+    pointer-events: none;
+    background-color: transparent;
+    border: none;
 }
