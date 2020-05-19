@@ -1,5 +1,5 @@
 body {
-    background-color: #D8D8D8;
+    background-color: #F9F9F9;
 }
 
 .btn {
@@ -155,66 +155,30 @@ body {
 .btn-outline.btn-danger:focus:not(:disabled), .btn-outline.btn-danger:focus:not(.disabled) {
     background-color: rgba(128, 0, 21, 0.301);
 }
+/*  */
 
-/*.........................................*/
+/*  */
 
-/* #enabled {
-    color: #6200EE;
+/* Btn Contained */
+
+/*  */
+
+/*  */
+
+.btn-contained{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Helvetica';
+    font-weight: 600;
+    transition: ease-in-out 0.3s;
+    border-radius: 4px;
+    background: #6200EE;
+    border: 1px solid #6200EE;
+    letter-spacing: 1.25px;
+    color: #FFFFFF;
+    
 }
-
-#enabled:hover {
-    color: rgb(64, 3, 150);
-    text-shadow: -3px 3px 10px rgb(255, 255, 255);
-} */
-
-/*.........................................*/
-
-/* #hovered {
-    background-color: rgb(241, 241, 241);
-    color: #37B799;
-}
-
-#hovered:hover {
-    background-color: #37B799;
-    color: rgb(241, 241, 241);
-} */
-
-/*.........................................*/
-
-/* #focused {
-    background-color: rgb(241, 241, 241);
-    color: rgb(250, 198, 67);
-}
-
-#focused:focus {
-    background-color: rgb(250, 198, 67);
-    color: rgb(241, 241, 241);
-} */
-
-/*.........................................*/
-
-/* #presed {
-    background-color: rgb(241, 241, 241);
-    color: #E3257E;
-    margin-left: 10px;
-    margin-left: 10px;
-    box-shadow: 0px 3px 10px #000;
-}
-
-#presed:hover {
-    background-color: rgb(228, 85, 152);
-    color: rgb(241, 241, 241);
-}
-
-#presed:focus {
-    background-color: rgb(170, 0, 79);
-    color: rgb(255, 251, 251);
-} */
-
-/*.........................................*/
-
-/* #disabledbutton {
-    background-color: none;
-    color: #9E9E9E;
-    border-color: none;
-} */
