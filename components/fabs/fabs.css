@@ -1,7 +1,9 @@
 body {
     background-color: #D8D8D8;
 }
+
 /*----FAB----*/
+
 .fab {
     display: inline-block;
     padding: 16px;
@@ -20,6 +22,7 @@ body {
 }
 
 /*----FAB MINI----*/
+
 .mini-fab {
     display: inline-block;
     padding: 8px;
@@ -38,8 +41,8 @@ body {
 }
 
 /*----FAB EXTENDED----*/
-.extended-fab{
-    display: inline-block;
+
+.extended-fab {
     padding: 10px 25px;
     background-color: #03DAC5;
     border: none;
@@ -49,9 +52,16 @@ body {
     cursor: pointer;
     border-radius: 28px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.14);
+    /* direction */
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 
-.extended-fab:hover, .extended-fab:focus{
+.extended-fab .icon {
+    margin-right: 8px;
+}
+
+.extended-fab:hover, .extended-fab:focus {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.14);
 }
-

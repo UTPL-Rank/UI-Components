@@ -10,3 +10,10 @@ function cargarSecondary() {
     var barra = document.getElementById('secondary')
     barra.value += 1
 }
+
+function loadProgressBar(id) {
+    var barra = document.getElementById(id)
+    setInterval(function () {
+        barra.value += 1
+    }, 25);
+}

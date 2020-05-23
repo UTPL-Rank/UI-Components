@@ -12,10 +12,18 @@
 <body>
     <h1>indicator progress</h1>
 
+
+    <section class="contenedor">
+        <h3>indicator linear: secondary</h3>
+        <h4>Action</h4>
+        <progress id="secondary" class="progreso secundary Action" value="0" min="0" max="100"></progress>
+        <button id="cargar" onclick="loadProgressBar('secondary')">Cargar</button>
+    </section>
+
     <section class="contenedor">
         <h3>indicator linear: default</h3>
         <h6>Indicator 0%:</h6>
-        <progress class="progreso" value="0" min="0" max="100"></progress></h6>
+        <progress class="progreso" value="0" min="0" max="100"></progress>
 
         <h6>Indicator 50%:</h6>
         <progress class="progreso" value="50" min="0" max="100"></progress>
@@ -25,14 +33,14 @@
 
         <h4>Action</h4>
         <progress id="default" class="progreso Action" value="0" min="0" max="100"></progress>
-        <input type="button" value="cargar" id="cargar" onclick="setInterval('cargar()',25)">
+        <input type="button" value="cargar" id="cargar" onclick="loadProgressBar('default')">
 
     </section>
 
     <section class="contenedor">
         <h3>indicator linear: primary</h3>
         <h6>Indicator 0%:</h6>
-        <progress class="progreso primary" value="0" min="0" max="100"></progress></h6>
+        <progress class="progreso primary" value="0" min="0" max="100"></progress>
 
         <h6>Indicator 50%:</h6>
         <progress class="progreso primary" value="50" min="0" max="100"></progress>
@@ -49,7 +57,7 @@
     <section class="contenedor">
         <h3>indicator linear: secondary</h3>
         <h6>Indicator 0%:</h6>
-        <progress class="progreso secundary" value="0" min="0" max="100"></progress></h6>
+        <progress class="progreso secundary" value="0" min="0" max="100"></progress>
 
         <h6>Indicator 50%:</h6>
         <progress class="progreso secundary" value="50" min="0" max="100"></progress>
@@ -62,6 +70,8 @@
         <input type="button" value="cargar" id="cargar" onclick="setInterval('cargarSecondary()',25)">
 
     </section>
+
+
 
 
 

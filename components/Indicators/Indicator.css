@@ -1,19 +1,21 @@
-Body{
+Body {
     background: #F9F9F9;
     font-family: "tahoma";
- 
 }
-h6{
-    margin:auto;
+
+h6 {
+    margin: auto;
     padding-top: 20px;
 }
-h3{
+
+h3 {
     text-transform: uppercase;
     text-align: left;
     font-family: "tahoma";
     font-weight: 500;
 }
-h4{
+
+h4 {
     padding-top: 20px;
     text-transform: uppercase;
     text-align: left;
@@ -21,48 +23,58 @@ h4{
     font-weight: 600;
     color: rgba(0, 0, 0, 0.575);
 }
-h1{
-    
+
+h1 {
     text-align: left;
     font-family: "tahoma";
     text-align: center;
     font-weight: 500;
     text-transform: uppercase;
 }
+
 /*Selection*/
-.contenedor{
+
+.contenedor {
     display: inline-block;
     border-left: 20px;
-    margin:auto;
-    padding: 40px;  
+    margin: auto;
+    padding: 40px;
 }
+
 /******* Indicator *******/
-.progreso{ 
-    margin:5px 1px ;
+
+.progreso {
+    margin: 5px 1px;
     width: 500px;
     height: 5px;
 }
 
 /******* Indicator Primary *******/
-.progreso.primary,.progreso.progreso.primary::-webkit-progress-bar{
+
+.progreso.primary, .progreso.primary::-webkit-progress-bar {
     background: #D5BDF6;
     border: none;
 }
-.progreso.primary::-moz-progress-bar{
-    background-color:#6200EE;
+
+.progreso.primary::-moz-progress-bar {
+    background-color: #6200EE;
 }
-.progreso.primary::-webkit-progress-value{
-    background-color:#6200EE;
+
+.progreso.primary::-webkit-progress-value {
+    background-color: #6200EE;
 }
 
 /******* Indicator Sucundary ******/
-.progreso.secundary,.progreso.secundary::-webkit-progress-bar{
+
+.progreso.secundary, .progreso.secundary::-webkit-progress-bar {
     background: #BEF2ED;
     border: none;
 }
-.progreso.secundary::-moz-progress-bar{
-    background-color:#03DAC5;
+
+.progreso.secundary::-moz-progress-bar {
+    background-color: #03DAC5;
 }
-.progreso.secundary::-webkit-progress-value{
-    background-color:#03DAC5;
+
+.progreso.secundary::-webkit-progress-value {
+    background-color: #03DAC5;
 }
