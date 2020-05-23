@@ -40,6 +40,10 @@
         <h6>Indicator 100%:</h6>
         <progress class="progreso primary" value="100" min="0" max="100"></progress>
 
+        <h4>Action</h4>
+        <progress id="primary" class="progreso primary Action" value="0" min="0" max="100"></progress>
+        <input type="button" value="cargar" id="cargar" onclick="setInterval('cargarPrim()',25)">
+
     </section>
 
     <section class="contenedor">
@@ -52,6 +56,10 @@
 
         <h6>Indicator 100%:</h6>
         <progress class="progreso secundary" value="100" min="0" max="100"></progress>
+
+        <h4>Action</h4>
+        <progress id="secondary" class="progreso secundary Action" value="0" min="0" max="100"></progress>
+        <input type="button" value="cargar" id="cargar" onclick="setInterval('cargarSecondary()',25)">
 
     </section>
 
