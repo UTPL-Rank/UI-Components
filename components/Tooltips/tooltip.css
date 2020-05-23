@@ -1,9 +1,6 @@
-body {
-  background-color: #D8D8D8;
-}
-
 .tooltip {
   position: relative;
+  /*
   display: inline-block;
   padding: 5px;
   color: #ffffff;
@@ -13,7 +10,7 @@ body {
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  border-radius: 5px;
+  border-radius: 5px; */
 }
 
 .tooltip[data-tooltip]::before {

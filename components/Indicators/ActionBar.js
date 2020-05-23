@@ -11,9 +11,16 @@ function cargarSecondary() {
     barra.value += 1
 }
 
+
+
 function loadProgressBar(id) {
     var barra = document.getElementById(id)
-    setInterval(function () {
+    barra.value = 0;
+    var incremento = setInterval(function () {
         barra.value += 1
     }, 25);
+
+    setTimeout(function () {
+        clearInterval(incremento)
+    }, 5000)
 }
