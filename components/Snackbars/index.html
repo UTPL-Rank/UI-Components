@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Snackbars</title>
     <link rel="stylesheet" type="text/css" href="snackbars.css">
-    <link rel="stylesheet" type="text/css" href="/components/buttons/buttons.css" media="print">
+    <link rel="stylesheet" type="text/css" href="../buttons/buttons.css">
 </head>
 
 <body>
@@ -15,25 +15,55 @@
     </header>
 
     <section>
-        <h2>Snackbars</h2>
-    </section>
+        <h4>Single line</h4>
+        <div class="snackbar-base">
+            <span class="single-line-snackbar">
+                Only line text string
+                Only line text string
+                Only line text string
+            </span>
+        </div>
 
-    <section>
-        <div id="mySnackbar">Onli tine text string.</div>   
-        <H4>Single line</H4>
-        
-        <div id="mySnackbar-one">Two lines text string. 
-            One two lines is preferable on mobile and tablet.</div>    
+        <br>
+        <hr>
+
         <h4>Two lines</h4>
+        <div class="snackbar-base">
+            Two lines text string.
+            One two lines is preferable on mobile and tablet.
+        </div>
 
-        <div id="mySnackbar-two">One line text string one action.
-            <button class="btn btn-action">Action</button></div>
+        <br>
+        <hr>
+
         <h4>Single line with a button</h4>
+        <div class="snackbar-base snackbar-row">
+            <span class="single-line-snackbar">
+                One line text string one action One line text string one action
+            </span>
 
-        <div id="mySnackbar-tree">Two lines with one action. 
-            One to two lines is preferable on mobile.
-            <button class="btn btn-action">Action</button></div>
+            <button class="btn btn-action">Action</button>
+        </div>
+
+        <br>
+        <hr>
+
         <h4>Two lines with a button</h4>
+        <div class="snackbar-base snackbar-row ">
+            Two lines with one action.
+            One to two lines is preferable on mobile
+            <a class="btn btn-action">Action</a>
+        </div>
+
+        <br>
+        <hr>
+
+        <h4>Two lines with longer text button</h4>
+        <div class="snackbar-base snackbar-column ">
+            Two lines with one action.
+            One to two lines is preferable on mobile mobile mobile mobile.
+            <button class="btn btn-action">Long text button</button>
+        </div>
     </section>
 </body>
 

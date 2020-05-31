@@ -1,43 +1,51 @@
-body {
+/* body {
   background-color: #D8D8D8;
-}
+} */
 
 /*----single line----*/
-#mySnackbar{
+
+/* base styles of a snack bar */
+
+.snackbar-base {
   color: #ffff;
-  background: rgba(0, 0, 0, 0.87);
+  background: rgb(31, 31, 31);
   border-radius: 4px;
   font-size: 20px;
-  text-align: left;
   padding: 16px;
-  position: initial;
   font-family: roboto;
-  left: 30%;
-  width: 40%;
-  z-index: 1;
-  visibility: visible;
-  letter-spacing: 0.25px;
+  width: 364px;
+  display: flex;
 }
 
-/*----Two Line----*/
-#mySnackbar-one{
-  color: #ffff;
-  background: rgba(0, 0, 0, 0.87);
-  border-radius: 4px;
-  font-size: 20px;
-  font-family: roboto;
-  text-align: left;
-  padding: 16px;
-  position: initial;
-  left: 30%;
-  width: 40%;
-  z-index: 1;
-  visibility: visible;
-  letter-spacing: 0.25px;
+.snackbar-row {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.single-line-snackbar {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.snackbar-row .btn {
+  margin-left: 8px;
+}
+
+.snackbar-column {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.snackbar-column .btn {
+  align-self: flex-end;
 }
 
 /*----Single line with a button----*/
-#mySnackbar-two{
+
+/* #mySnackbar-two {
   color: #ffff;
   background: rgba(0, 0, 0, 0.87);
   border-radius: 4px;
@@ -46,17 +54,18 @@ body {
   text-align: left;
   padding: 16px;
   position: initial;
-  /*bottom: 30px;*/
+  bottom: 30px;
   left: 30%;
   width: 40%;
   z-index: 1;
   visibility: visible;
   letter-spacing: 0.25px;
-}
-
+} */
 
 /*----Two lines with a button----*/
-#mySnackbar-tree{
+
+/* 
+#mySnackbar-tree {
   color: #ffff;
   background: rgba(0, 0, 0, 0.87);
   border-radius: 4px;
@@ -65,14 +74,13 @@ body {
   text-align: left;
   padding: 16px;
   position: initial;
-  /*bottom: 30px;*/
+  bottom: 30px;
   left: 30%;
   width: 40%;
   z-index: 1;
   visibility: visible;
   letter-spacing: 0.25px;
-}
-
+} */
 
 /*
 .btn {
