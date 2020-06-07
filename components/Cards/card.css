@@ -1,68 +1,53 @@
-
-
-.Mycard {
-    font-family: Helvetica;
-    width: 344px;
-    display: inline-block;
-    margin: 20px;
+.card {
     background: #FFFFFF;
     font-size: 14px;
-    line-height: 20px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgba(33, 33, 33, 0.08);
     flex-direction: column;
     letter-spacing: 0.25px;
     margin-right: 16px;
-    
-
-
-/* sombreado Surface overlay */
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
-border-radius: 4px;
+    /* sombreado Surface overlay */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+    transition: 0.3s;
 }
-
 
 /*Ajuste de texto*/
+
 .content span {
     text-align: justify;
-    
 }
+
 /*Encabezado de la carta- header card*/
+
 .card_header {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: cen;
     padding: 16px;
-    line-height: 1px;
-    
-}
-/*titulo del encabezado - Title header*/
-.titles{
-    line-height: 1px;
 }
 
+/*titulo del encabezado - Title header*/
+
+.titles {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
 
 /*icon header card*/
+
 .icon {
     margin-right: 16px;
     align-items: flex-start;
 }
-/*icon share*/
-.icon.share{
-    
-    flex-direction: row;
-    align-items: flex-end;
-    margin: 20px;
-}
-
 
 /* pie de la carta - foot card*/
+
 .content {
     width: 275px;
     padding: 16px;
-    
-    
     align-items: stretch;
     justify-content: start;
     font-size: 14px;
@@ -71,20 +56,12 @@ border-radius: 4px;
 
 .content .actions {
     justify-content: flex-start;
-    margin: 20px -10px -2px 0px;
+    margin: 10px 0 0 -7px;
 }
-
 
 /*outline efect*/
-.Mycard.outline:hover{
-    box-shadow: none;
-    border: none;
-    background-color: rgba(225, 214, 241, 0.37);
-    
-}
-.icon.share:hover{
-    border-radius: 6px;
-    background-color: rgba(162, 156, 172, 0.658);
-}
 
-
+.card:hover {
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 12px 17px rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+}
