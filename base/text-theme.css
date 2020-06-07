@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-display-4 {
+    font-weight: 300;
+    font-size: 6rem;
+}
+
+.text-display-3 {
+    font-weight: 300;
+    font-size: 3.75rem;
+}
+
+.text-display-2 {
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.text-display-1 {
+    font-weight: 400;
+    font-size: 2.125rem;
+}
+
+.text-headline {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.text-title {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.text-subhead {
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.text-subtitle {
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.text-body2 {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+p, .text-body1 {
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+button, .text-button {
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+small, .text-caption {
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.text-overline {
+    font-weight: 400;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
