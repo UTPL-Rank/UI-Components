@@ -1,0 +1,71 @@
+.dialog{
+    background-color: #ffffff;
+   
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 4px;
+   
+    text-align: left;
+ 
+    transition: 0.3s;
+
+line-height: 20px;
+font-size: 14px;
+color: rgba(0, 0, 0, 0.6);
+
+/* or 143% */
+
+letter-spacing: 0.25px;
+
+/* 00. On Surface / Medium Emphasis */
+
+    
+}
+.dialog.head{
+    align-items: flex-start;
+    width: auto;
+    padding: 16px 0px 0px 20px;
+    box-shadow: none;
+}
+.dialog.icon.head{
+    align-items: center;
+    width: auto;
+    padding: 16px 0px 0px 0px;
+    box-shadow: none;
+}
+.dialog.mesage{
+    width: auto;
+    padding: 16px 20px;
+    box-shadow: none;
+   
+}
+.dialog.oneline.mesage{
+    width: auto;
+    padding: 21px 0px 0px 20px;
+    box-shadow: none;
+    
+}
+
+.text{
+padding: 0px;
+margin: 0px;
+
+
+}
+ 
+.foot{
+    box-shadow: none;  
+    align-items: flex-end;
+
+    
+}
+.final{
+ 
+padding: 8px 7px;}
+
+.contend:hover{
+    border-radius: 4px;
+    box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2), 0px 9px 46px rgba(0, 0, 0, 0.12), 0px 24px 38px rgba(0, 0, 0, 0.14);
+
+}
