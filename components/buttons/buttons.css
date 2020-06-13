@@ -1,7 +1,3 @@
-body {
-    background-color: #F9F9F9;
-}
-
 .btn {
     display: inline-block;
     padding: 10px 7px;
@@ -12,7 +8,7 @@ body {
     text-decoration: none;
     font-family: 'Helvetica';
     font-weight: 600;
-    color: #6200EE;
+    color: var(--color-base);
     transition: ease-in-out 0.3s;
     cursor: pointer;
     letter-spacing: 2px;
@@ -35,21 +31,17 @@ body {
 /* Button primary */
 
 .btn.btn-primary {
-    color: teal;
+    color: var(--color-primary);
 }
 
-.btn.btn-primary:hover:not(:disabled), .btn.btn-primary:hover:not(.disabled) {
-    background-color: rgba(0, 128, 128, 0.15);
-}
-
-.btn.btn-primary:focus:not(:disabled), .btn.btn-primary:focus:not(.disabled) {
-    background-color: rgba(0, 128, 128, 0.301);
+.btn.btn-primary:hover:not(:disabled), .btn.btn-primary:hover:not(.disabled), .btn.btn-primary:focus:not(:disabled), .btn.btn-primary:focus:not(.disabled) {
+    background-color: var(--color-primary-light);
 }
 
 /* Button Warn */
 
 .btn.btn-warn {
-    color: rgb(209, 185, 50);
+    color: var(--color-accent);
 }
 
 .btn.btn-warn:hover:not(:disabled), .btn.btn-warn:hover:not(.disabled) {
@@ -63,7 +55,7 @@ body {
 /* Button Danger */
 
 .btn.btn-danger {
-    color: rgb(128, 0, 28);
+    color: var(--color-error);
 }
 
 .btn.btn-danger:hover:not(:disabled), .btn.btn-danger:hover:not(.disabled) {
@@ -94,7 +86,7 @@ body {
     text-decoration: none;
     font-family: 'Helvetica';
     font-weight: 600;
-    color: #6200EE;
+    color: var(--color-base);
     transition: ease-in-out 0.3s;
     cursor: pointer;
     letter-spacing: 2px;
@@ -117,7 +109,7 @@ body {
 /* Button primary */
 
 .btn-outline.btn-primary {
-    color: teal;
+    color: var(--color-primary);
 }
 
 .btn-outline.btn-primary:hover:not(:disabled), .btn-outline.btn-primary:hover:not(.disabled) {
@@ -131,7 +123,7 @@ body {
 /* Button Warn */
 
 .btn-outline.btn-warn {
-    color: rgb(209, 185, 50);
+    color: var(--color-accent);
 }
 
 .btn-outline.btn-warn:hover:not(:disabled), .btn-outline.btn-warn:hover:not(.disabled) {
@@ -145,7 +137,7 @@ body {
 /* Button Danger */
 
 .btn-outline.btn-danger {
-    color: rgb(128, 0, 28);
+    color: var(--color-error);
 }
 
 .btn-outline.btn-danger:hover:not(:disabled), .btn-outline.btn-danger:hover:not(.disabled) {
@@ -177,17 +169,17 @@ body {
     font-weight: 600;
     transition: ease-in-out 0.3s;
     border-radius: 4px;
-    background: #6200EE;
-    border: 1px solid #6200EE;
+    background: var(--color-base);
+    border: 1px solid var(--color-base);
     letter-spacing: 1.25px;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 /* Button Contained Hover */
 
 .btn-contained:hover:not(:disabled), .btn-contained:hover:not(.disabled) {
-    background: #FFFFFF;
-    color: #6200EE;
+    background: var(--color-white);
+    color: var(--color-base);
 }
 
 /* Button Contained Focused */

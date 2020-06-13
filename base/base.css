@@ -1,5 +1,16 @@
+@import url('./text-theme.css');
+@import url('./utils.css');
 :root {
-    --text-white: #ffffff
+    --text-white: #ffffff;
+    --color-white: #ffffff;
+    --color-base-dark: #5100c2;
+    --color-base: #6200EE;
+    --color-base-light: #6300ee70;
+    --color-primary-dark: #008080;
+    --color-primary: #008080;
+    --color-primary-light: #00808026;
+    --color-accent: #d1b932;
+    --color-error: #80001c;
 }
 
 *, *::before, *::after {
