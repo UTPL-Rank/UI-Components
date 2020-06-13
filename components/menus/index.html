@@ -6,128 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menus</title>
     <link rel="stylesheet" type="text/css" href="menus.css">
+    <link rel="stylesheet" type="text/css" href="../buttons/buttons.css">
     <link rel="stylesheet" href="../../base/base.css">
-    <link rel="stylesheet" href="../../base/text-theme.css">
-
-
 </head>
 
-<body>
+<body class="container">
     <h4 class="text-title">Material Design</h4>
     <h1 class="text-display-1">Menus</h1>
     <br>
     <hr>
     <h2 class="text-title">Dropdown</h4>
-    <br>
-
-    <div class="cont">
-        <ul class="sect">
-                <li>
-                    <span>Subtitle 1</span>
-                    <a href="#">
-                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-                </a></li>
-                <li>
-                    <span>Subtitle 1</span>
-                    <a href="#">
-                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-                </a></li> 
-                <li>
-                    <span>Subtitle 1</span>
-                    <a href="#">
-                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-                </a></li> 
-                <li>
-                    <span>Subtitle 1</span>
-                    <a href="#"> 
-                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-                </a><!--
-                    <ul class="sect sect-two" >
-                        <Span>Subtitle 1</Span>                            
-                        <a href="#">
-                            <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-                        </a>
-                        <Span>Subtitle 1</Span>
-                        <a href="#">
-                            <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-                        </a>
-                        <Span>Subtitle 1</Span>
-                        <a href="#">
-                            <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>        
-                        </a>
-                    </ul>-->
-                </li> 
+        <div class="dropdown">
+            <button class="btn btn-primary">Menu</button>
+            <div class="dropdown-content">
+                <a href="#" class="dropdown-item">
+                    <span class="item-label">Subtitle 1</span>
+                    <div class="item-leading">
+                        <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z"
+                                fill="#000" fill-opacity=".8" />
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                    <span class="item-label">Subtitle 2 Subtitle 2 Subtitle 2 Subtitle 2 Subtitle 2</span>
+                    <div class="item-leading">
+                        <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z"
+                                fill="#000" fill-opacity=".8" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="menu">
+            <ul class="sect">
                 <li>
                     <Span>Subtitle 1</Span>
                     <a href="#">
-                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-                </a></li> 
+                        <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z"
+                                fill="#000" fill-opacity=".8" /></svg>
+                    </a></li>
                 <li>
                     <Span>Subtitle 1</Span>
                     <a href="#">
-                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-                </a></li> 
+                        <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z"
+                                fill="#000" fill-opacity=".8" /></svg>
+                    </a></li>
                 <li>
                     <Span>Subtitle 1</Span>
                     <a href="#">
-                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-                </a></li> 
+                        <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z"
+                                fill="#000" fill-opacity=".8" /></svg>
+                    </a></li>
                 <li>
                     <Span>Subtitle 1</Span>
                     <a href="#">
-                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-                </a></li> 
-                <li>
-                    <Span>Subtitle 1</Span>
-                    <a href="#">
-                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-                </a></li> 
-                <li>
-                    <Span>Subtitle 1</Span>
-                    <a href="#">
-                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-                </a></li> 
-                <li>
-                    <Span>Subtitle 1</Span>
-                    <a href="#">
-                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-                </a></li> 
-                <li>
-                    <Span>Subtitle 1</Span>
-                    <a href="#">
-                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-                </a></li> 
-                <li>
-                    <Span>Subtitle 1</Span>
-                    <a href="#">
-                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-                </a></li> 
-            </a></ul>
-    </div>
-    <br>
-    <div class="cont" >
-        <ul class="sect">
-            <li>
-                <Span>Subtitle 1</Span>
-                <a href="#">
-                <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-            </a></li>
-            <li>
-                <Span>Subtitle 1</Span>
-                <a href="#">
-                <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-            </a></li>
-            <li>
-                <Span>Subtitle 1</Span>
-                <a href="#">
-                <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-            </a></li>
-            <li>
-                <Span>Subtitle 1</Span>
-                <a href="#">
-                <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z" fill="#000" fill-opacity=".8"/></svg>
-            </a></li> 
-        </ul>
-    </div>
+                        <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91.81 10 2.09 11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z"
+                                fill="#000" fill-opacity=".8" /></svg>
+                    </a></li>
+            </ul>
+        </div>
 </body>
+
 </html>

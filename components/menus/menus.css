@@ -1,5 +1,5 @@
-
 /*-----Menu------*/
+
 /*
 .navegation{
     width: 500px;
@@ -72,31 +72,48 @@
 }
 */
 
-.cont{
-    text-decoration: none;  
-    width:auto;
-    border-radius: 4px;
-    margin: 20px;  
+.dropdown:hover .dropdown-content {
+    z-index: 1200;
+    position: absolute;
+    background-color: white;
     width: 344px;
-}
-.sect {
-    display: flex;
-    list-style: none;
-    color:black;
-    text-decoration:none;  
-    width: auto;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.14);
     border-radius: 4px;
+    display: flex;
     flex-direction: column;
+    color: black;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.14);
 }
-            
-.sect a{
+
+.dropdown .dropdown-content {
+    display: none;
+}
+
+.dropdown-content .dropdown-item {
+    display: flex;
+    flex-direction: row;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-item .item-label {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown-item .item-leading {
+    margin-left: 8px;
+    color: lawngreen;
+}
+
+/* 
+.menu-item a {
     display: flex;
     flex-direction: column;
     list-style: none;
     width: 50%;
-    color:black;
-    text-decoration:none;  
     padding: auto;
     margin: a;
     align-items: flex-end;
@@ -104,18 +121,21 @@
     border-radius: 4px;
     opacity: .6;
 }
-.sect span{
+
+.menu-item span {
     width: 50%;
     padding-left: 16px;
     border-radius: 4px;
 }
-.select span:hover{
+
+.select span:hover {
     display: block;
     color: black;
     transition: all .4s;
     opacity: 1;
 }
-.sect a:hover{
+
+.menu-item a:hover {
     display: inline-block;
     transition: all .4s;
     opacity: 1;
@@ -124,7 +144,7 @@
     flex-direction: column;
 }
 
-.sect li{    
+.menu-item li {
     display: flex;
     flex-grow: 1px;
     flex-direction: row;
@@ -133,12 +153,11 @@
     align-items: center;
     width: auto;
     height: 45px;
-    color:black;
-    text-decoration:none;      
+    color: black;
+    text-decoration: none;
 }
 
-.sect li :hover{
+.menu-item li :hover {
     transition: all .4s;
     opacity: 1;
-
-}
+} */
