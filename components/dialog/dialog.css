@@ -1,0 +1,47 @@
+.dialog {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    text-align: left;
+    transition: 0.3s;
+    line-height: 20px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    /* or 143% */
+    letter-spacing: 0.25px;
+    /* 00. On Surface / Medium Emphasis */
+    padding: 20px 16px;
+}
+
+.dialog:hover {
+    border-radius: 4px;
+    box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2), 0px 9px 46px rgba(0, 0, 0, 0.12), 0px 24px 38px rgba(0, 0, 0, 0.14);
+}
+
+.dialog-header {
+    align-self: flex-start;
+    margin-bottom: 15px;
+}
+
+.dialog-header-center {
+    align-self: center;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dialog-header-center>*:not(:first-child) {
+    margin-top: 6px;
+}
+
+.dialog-content {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.dialog-actions {
+    box-shadow: none;
+    align-self: flex-end;
+}
