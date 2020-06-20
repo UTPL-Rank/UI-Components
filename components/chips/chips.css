@@ -1,0 +1,43 @@
+.chip{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px; 
+    border-radius: 16px;
+}
+
+
+.chip-enable{
+    background: var(--color-enable);
+}
+.chip-hover{
+    background: var(--color-hover);
+}
+.chip-focus{
+    background: var(--color-focus);
+}
+.chip-ACTIVE{
+    color: #6200EE;
+    background: rgba(98, 0, 238, 0.08);
+}
+
+
+.chip-hover:hover:not(:disabled), .chip-hover:hover:not(:disabled), .chip-hover:hover:not(:disabled), .chip-hover:hover:not(:disabled),.chip-hover:hover:not(.disabled), .chip-hover:hover:not(.disabled), .chip-hover:hover:not(.disabled), .chip-hover:hover:not(.disabled){
+    color: var(--color-black);
+    background: var(--color-hover);
+}
+.chip-focus:focus:not(:disabled), .chip-focus:focus:not(:disabled), .chip-focus:focus:not(:disabled), .chip-focus:focus:not(:disabled),.chip-focus:focus:not(.disabled), .chip-focus:focus:not(.disabled), .chip-focus:focus:not(.disabled), .chip-focus:focus:not(.disabled){
+    background-color: var(--color-focus);
+}
+
+
+.chip.disabled{
+    float: none;
+    align-self: flex-end;
+    color: var(--color-disabled);
+    pointer-events: none;
+    background-color: transparent;
+    border: none;
+}
+
+
+

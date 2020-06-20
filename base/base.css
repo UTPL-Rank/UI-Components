@@ -11,6 +11,11 @@
     --color-primary-light: #00808026;
     --color-accent: #d1b932;
     --color-error: #80001c;
+    --color-enable: #21212114;
+    --color-hover: #00000014;
+    --color-focus: #0000001f;
+    --color-black: #000000;
+    --color-disabled: #00000061;
 }
 
 *, *::before, *::after {
