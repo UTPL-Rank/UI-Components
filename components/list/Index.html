@@ -5,49 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="list.css">
-  
+
     <link rel="stylesheet" href="../../base/text-theme.css">
     <link rel="stylesheet" href="../../base/base.css">
     <link rel="stylesheet" href="../../base/text-type.css">
 
-
-
-    <title>Document</title>
+    <title>List</title>
+    <style>
+        .container_list {
+            display: flex;
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container_list">
 
-        <!-- List sigle-line -->
+        <h1>Single line</h1>
 
+        <!-- List single-line -->
         <div class="list">
-            <h1>Single line</h1>
-            <div class="items sigle-line">
-                <div class="title">
+            <div class="list-item">
+                <div class="list-item--text list-divider">
                     <label for="chek1">Subtitle 1</label>
                     <input type="checkbox" id="chek1">
                 </div>
             </div>
-           
-            <div class="items sigle-line">
-                 <!-- icon a -->
+            <div class="list-item">
+                <div class="list-item--text list-divider">
+                    <label for="chek1">Subtitle 1</label>
+                    <input type="checkbox" id="chek1">
+                </div>
+            </div>
+
+            <div class="list-item">
+                <div class="list-item--text">
+                    <label for="chek1">Subtitle 1</label>
+                    <input type="checkbox" id="chek1">
+                </div>
+            </div>
+            <div class="list-item">
+                <!-- icon a -->
                 <div class="icon a">
                     <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z"
                             fill="black" fill-opacity="0.87" />
                     </svg>
-
                 </div>
 
-                <div class="title">
+                <div class="list-item--text">
                     <label for="chek2">Subtitle 1</label>
                     <input type="checkbox" id="chek2">
 
                 </div>
             </div>
-            <div class="items sigle-line">
-                 <!-- icon b -->
+            <div class="list-item">
+                <!-- icon b -->
                 <div class="icon b">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -63,14 +79,14 @@
                         </defs>
                     </svg>
                 </div>
-                <div class="title">
+                <div class="list-item--text">
                     <label for="chek3">Subtitle 1</label>
                     <input type="checkbox" id="chek3">
 
                 </div>
             </div>
-            <div class="items sigle-line">
-                 <!-- icon c -->
+            <div class="list-item">
+                <!-- icon c -->
                 <div class="icon c">
                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -85,13 +101,13 @@
                     </svg>
                 </div>
 
-                <div class="title">
+                <div class="list-item--text">
                     <label for="#">Subtitle 1 </label>
                 </div>
 
             </div>
-            <div class="items sigle-line">
-                 <!-- icon d -->
+            <div class="list-item">
+                <!-- icon d -->
                 <div class="icon d">
                     <svg width="100" height="56" viewBox="0 0 100 56" fill="none" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -107,7 +123,7 @@
                     </svg>
                 </div>
 
-                <div class="title">
+                <div class="list-item--text list-divider">
                     <label for="chek4">Subtitle 1</label>
                     <input type="checkbox" id="chek4">
 
@@ -123,7 +139,7 @@
         <div class="list">
             <h1>Two line</h1>
             <div class="items two-line">
-                <div class="title">
+                <div class="list-item--text">
                     <div class="more-lines">
                         <span class="hoverline-text">hoverline</span>
                         <span>Subtitle 1</span>
@@ -135,7 +151,7 @@
             </div>
             <div class="items two-line">
 
-                <div class="title">
+                <div class="list-item--text">
                     <div class="more-lines">
                         <span>Subtitle 1</span>
                         <span class="secondary-text">Secondary text</span>
@@ -159,7 +175,7 @@
 
                 </div>
 
-                <div class="title">
+                <div class="list-item--text">
                     <div class="more-lines">
                         <span>Subtitle 1</span>
                         <span class="secondary-text">Secondary text</span>
@@ -193,7 +209,7 @@
 
                 </div>
 
-                <div class="title">
+                <div class="list-item--text">
                     <div class="more-lines">
                         <span>Subtitle 1</span>
                         <span class="secondary-text">Secondary text</span>
@@ -211,12 +227,12 @@
 
         </div>
 
-       <!--  List three-line -->
+        <!--  List three-line -->
 
         <div class="list">
             <h1>three line</h1>
             <div class="items three-line">
-                <div class="title">
+                <div class="list-item--text">
                     <div class="more-lines">
                         <span>Subtitle 1</span>
                         <span class="secondary-text">Secondary text Lorem ipsum dolor sit amet consectetur elit. </span>
@@ -225,7 +241,7 @@
                 </div>
             </div>
             <div class="items three-line">
-                <div class="title">
+                <div class="list-item--text">
                     <div class="more-lines">
                         <span class="hoverline-text">hoverline</span>
                         <span>Subtitle 1</span>
@@ -244,7 +260,7 @@
 
 
                 </div>
-                <div class="title">
+                <div class="list-item--text">
                     <div class="more-lines">
                         <span>Subtitle 1</span>
                         <span class="secondary-text">Secondary text Lorem ipsum dolor sit amet consectetur elit. </span>
@@ -270,7 +286,7 @@
 
 
                 </div>
-                <div class="title">
+                <div class="list-item--text">
                     <div class="more-lines">
                         <span>Subtitle 1</span>
                         <span class="secondary-text">Secondary text Lorem ipsum dolor sit amet consectetur elit. </span>
@@ -297,7 +313,7 @@
 
 
                 </div>
-                <div class="title">
+                <div class="list-item--text">
                     <div class="more-lines">
                         <span>Subtitle 1</span>
                         <span class="secondary-text">Secondary text Lorem ipsum dolor sit amet consectetur elit. </span>
