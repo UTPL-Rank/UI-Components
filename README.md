@@ -9,7 +9,7 @@ Styled components in html and css
 
 - [Tooltips](https://utpl-rank.github.io/UI-Components/components/Tooltips/)
 
-- [Snackbar](https://utpl-rank.github.io/UI-Components/components/Snackbar/)
+- [Snackbar](https://utpl-rank.github.io/UI-Components/components/Snackbars/)
 
 - [Tabs](https://utpl-rank.github.io/UI-Components/components/tabs/)
 
