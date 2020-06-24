@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevation</title>
+    <link rel="stylesheet" href="./../ui-components.css">
+
+    <style>
+        header {
+            margin: var(--space-4) auto;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--color-base);
+        }
+
+        section {
+            margin-top: var(--space-10);
+            margin-bottom: var(--space-10);
+            display: flex;
+            flex-direction: column;
+            justify-items: stretch;
+        }
+
+        section>*:not(:last-child) {
+            margin-bottom: var(--space-4);
+        }
+
+        .box {
+            padding: var(--space-4);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h2 class="text-subhead">Shadows</h2>
+        <h1 class="text-display-1">Elevation</h1>
+    </header>
+
+    <section class="container">
+
+        <h2 class="text-title">Base Shadow</h2>
+
+        <div class="box shadow-0">
+            <code class="text-body">.shadow-0</code>
+        </div>
+
+        <div class="box shadow-1">
+            <code class="text-body">.shadow-1</code>
+        </div>
+
+        <div class="box shadow-2">
+            <code class="text-body">.shadow-2</code>
+        </div>
+
+        <div class="box shadow-3">
+            <code class="text-body">.shadow-3</code>
+        </div>
+
+        <div class="box shadow-4">
+            <code class="text-body">.shadow-4</code>
+        </div>
+
+        <div class="box shadow-6">
+            <code class="text-body">.shadow-6</code>
+        </div>
+
+        <div class="box shadow-8">
+            <code class="text-body">.shadow-8</code>
+        </div>
+
+        <div class="box shadow-9">
+            <code class="text-body">.shadow-9</code>
+        </div>
+
+        <div class="box shadow-12">
+            <code class="text-body">.shadow-12</code>
+        </div>
+
+        <div class="box shadow-16">
+            <code class="text-body">.shadow-16</code>
+        </div>
+
+        <div class="box shadow-24">
+            <code class="text-body">.shadow-24</code>
+        </div>
+    </section>
+
+    <section class="container">
+
+        <h2 class="text-title">Animate Shadows</h2>
+
+        <div class="box transition-shadow shadow-0 hover:shadow-1">
+            <code class="text-body">.transition-shadow .shadow-0 .hover:shadow-1</code>
+        </div>
+
+        <div class="box transition-shadow shadow-0 hover:shadow-2">
+            <code class="text-body">.transition-shadow .shadow-0 .hover:shadow-2</code>
+        </div>
+
+        <div class="box transition-shadow shadow-0 hover:shadow-3">
+            <code class="text-body">.transition-shadow .shadow-0 .hover:shadow-3</code>
+        </div>
+
+        <div class="box transition-shadow shadow-0 hover:shadow-4">
+            <code class="text-body">.transition-shadow .shadow-0 .hover:shadow-4</code>
+        </div>
+
+        <div class="box transition-shadow shadow-0 hover:shadow-6">
+            <code class="text-body">.transition-shadow .shadow-0 .hover:shadow-6</code>
+        </div>
+
+        <div class="box transition-shadow shadow-0 hover:shadow-8">
+            <code class="text-body">.transition-shadow .shadow-0 .hover:shadow-8</code>
+        </div>
+
+        <div class="box transition-shadow shadow-0 hover:shadow-9">
+            <code class="text-body">.transition-shadow .shadow-0 .hover:shadow-9</code>
+        </div>
+
+        <div class="box transition-shadow shadow-0 hover:shadow-12">
+            <code class="text-body">.transition-shadow .shadow-0 .hover:shadow-12</code>
+        </div>
+
+        <div class="box transition-shadow shadow-0 hover:shadow-16">
+            <code class="text-body">.transition-shadow .shadow-0 .hover:shadow-16</code>
+        </div>
+
+        <div class="box transition-shadow shadow-0 hover:shadow-24">
+            <code class="text-body">.transition-shadow .shadow-0 .hover:shadow-24</code>
+        </div>
+    </section>
+</body>
+
+</html>
