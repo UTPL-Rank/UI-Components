@@ -4,28 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="tooltip.css">
+    <title>Tooltip</title>
+    <link rel="stylesheet" type="text/css" href="../../base/base.css">
+    <link rel="stylesheet" type="text/css" href="tooltip.css">
+
 </head>
 
 <body>
     <header>
-        <h1>Tooltips</h1>
+        <h1 class="text-display-2">
+            Tooltips
+        </h1>
     </header>
-
+    <hr>
     <section>
-        <h2>Tooltip</h2>
-    </section>
-
-    <section>
-        <div class="tooltip">
+        <h2 class="text-hedline">
+            Tooltip
+        </h2>
+    
+        <div class="tooltip" data-tooltip="Hello there">
             Caption
-            <span class="tooltiptext">Helouda</span>
+        </div>
+        <div class="tooltip" data-tooltip="I'm a tooltip">
+            Hello World
+        </div>        
+        <div class="tooltip" data-tooltip="I'm a looonnnnggg tooltip">
+            Hello World
         </div>
 
-        <div class="tooltip" data-tooltip="I'm a tooltip">Hello World</div>
+        <xmp>
+            <div class="tooltip" data-tooltip="Hello there">
+                Caption
+            </div>
+            <div class="tooltip" data-tooltip="I'm a tooltip">
+                Hello World
+            </div>
+            <div class="tooltip" data-tooltip="I'm a looonnnnggg tooltip">
+                Hello World
+            </div>
+        </xmp>
 
-        <div class="tooltip" data-tooltip="I'm a looonnnnggg tooltip">Hello World</div>
     </section>
 
 </body>
