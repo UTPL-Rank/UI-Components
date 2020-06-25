@@ -2,3 +2,4 @@
 @import url('./base/text-theme.css');
 @import url('./base/utils.css');
 @import url('./base/elevation.css');
+@import url('./components/buttons/buttons.css');
