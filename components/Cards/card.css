@@ -1,67 +1,52 @@
 .card {
+    --card-border-radius: var(--space-1);
+    --card-inner-padding: var(--space-4);
     background: #FFFFFF;
-    font-size: 14px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(33, 33, 33, 0.08);
+    display: flex;
     flex-direction: column;
-    letter-spacing: 0.25px;
-    margin-right: 16px;
-    /* sombreado Surface overlay */
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
-    border-radius: 4px;
-    transition: 0.3s;
-}
-
-/*Ajuste de texto*/
-
-.content span {
-    text-align: justify;
+    border-radius: var(--card-border-radius);
 }
 
 /*Encabezado de la carta- header card*/
 
-.card_header {
+.card .card_header {
     display: flex;
     flex-direction: row;
-    align-items: cen;
-    padding: 16px;
+    align-items: flex-start;
+    padding: var(--card-inner-padding);
 }
 
 /*titulo del encabezado - Title header*/
 
-.titles {
+.card .titles {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
+.card .titles h2 {
+    color: var(--color-black);
+}
+
+.card .titles span {
+    color: var(--color-dark);
+}
+
 /*icon header card*/
 
-.icon {
-    margin-right: 16px;
-    align-items: flex-start;
+.card .icon {
+    margin-right: var(--card-inner-padding);
 }
 
 /* pie de la carta - foot card*/
 
-.content {
-    width: 275px;
-    padding: 16px;
-    align-items: stretch;
-    justify-content: start;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.6);
+.card .content {
+    padding: var(--card-inner-padding);
+    justify-self: stretch;
 }
 
-.content .actions {
+.card .content .actions {
     justify-content: flex-start;
-    margin: 10px 0 0 -7px;
-}
-
-/*outline efect*/
-
-.card:hover {
-    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 12px 17px rgba(0, 0, 0, 0.14);
-    cursor: pointer;
+    margin-top: var(--space-2);
+    margin-left: var(--space-n-3);
 }
