@@ -1,14 +1,12 @@
 .banner-base {
-    width: 360px;
+    --banner-width: 450px;
+    --banner-margin: var(--space-5);
+    --banner-padding: var(--space-4);
+    width: var(--banner-width);
     display: flex;
-    margin: 20px;
-    background: #FFFFFF;
-    font-size: 14px;
-    line-height: 20px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(33, 33, 33, 0.08);
-    padding: 16px;
+    margin: var(--banner-margin);
+    background: var(--color-white);
+    padding: var(--banner-padding);
 }
 
 .banner-one-line {
@@ -17,18 +15,14 @@
     justify-content: space-between;
 }
 
-.banner-one-line span {
+.banner-one-line>*:first-child {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .banner-one-line .btn {
-    margin: -10px -7px -10px 0;
-}
-
-.banner-two-lines span, .banner-two-lines-icon .content span {
-    text-align: justify;
+    margin-right: var(--space-n-3);
 }
 
 .banner-two-lines {
@@ -37,10 +31,12 @@
     justify-content: start;
 }
 
-.banner-two-lines .actions {
+.banner-base .actions {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    margin: 4px -7px -10px 0;
+    margin-bottom: var(--space-n-2);
+    margin-right: var(--space-n-3);
 }
 
 .banner-two-lines-icon {
@@ -49,7 +45,7 @@
 }
 
 .banner-two-lines-icon .icon {
-    margin-right: 16px;
+    margin-right: var(--space-n-4);
 }
 
 .banner-two-lines-icon .content {
@@ -58,23 +54,3 @@
     align-items: stretch;
     justify-content: start;
 }
-
-.banner-two-lines-icon .content .actions {
-    display: flex;
-    justify-content: flex-end;
-    margin: 4px -7px -10px 0;
-}
-
-/* 
-.sectionText {
-    align-content: left;
-    letter-spacing: 0.25px;
-    text-align: left;
-    font-family: 'Helvetica';
-    color: rgba(0, 0, 0, 0.521);
-    font-weight: 500;
-}
-
-.sectionButtons {
-    float: right;
-} */

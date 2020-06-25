@@ -3,6 +3,7 @@ Styled components in html and css
 
 ### Components
 
+- [Banner](https://utpl-rank.github.io/UI-Components/components/banner/)
 - [Buttons](https://utpl-rank.github.io/UI-Components/components/buttons/)
 
 - [Fabs](https://utpl-rank.github.io/UI-Components/components/fabs/)

@@ -70,6 +70,26 @@
     --space-44: 11rem;
     --space-52: 13rem;
     --space-60: 15rem;
+    --space-n-1: -0.25rem;
+    --space-n-2: -0.5rem;
+    --space-n-3: -0.75rem;
+    --space-n-4: -1rem;
+    --space-n-5: -1.25rem;
+    --space-n-6: -1.5rem;
+    --space-n-7: -1.75rem;
+    --space-n-8: -2rem;
+    --space-n-9: -2.25rem;
+    --space-n-10: -2.5rem;
+    --space-n-11: -2.75rem;
+    --space-n-12: -3rem;
+    --space-n-14: -3.5rem;
+    --space-n-16: -4rem;
+    --space-n-20: -5rem;
+    --space-n-28: -7rem;
+    --space-n-36: -9rem;
+    --space-n-44: -11rem;
+    --space-n-52: -13rem;
+    --space-n-60: -15rem;
 }
 
 *, *::before, *::after {
