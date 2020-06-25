@@ -4,43 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tooltip</title>
-    <link rel="stylesheet" type="text/css" href="../../base/base.css">
-    <link rel="stylesheet" type="text/css" href="tooltip.css">
+    <title>
+        Tooltip
+    </title>
+    <link rel="stylesheet" type="text/css" href="../../ui-components.css">
 
 </head>
 
-<body>
+<body class="container">
     <header>
         <h1 class="text-display-2">
             Tooltips
         </h1>
     </header>
-    <hr>
+    <br>
+    <h2 class="text-hedline">
+        Tooltip
+    </h2>
+    <br>
     <section>
-        <h2 class="text-hedline">
-            Tooltip
-        </h2>
-    
-        <div class="tooltip" data-tooltip="Hello there">
-            Caption
+
+        <div class="tooltip tooltip-top" data-tooltip="Hello there">
+            Top
         </div>
-        <div class="tooltip" data-tooltip="I'm a tooltip">
-            Hello World
-        </div>        
-        <div class="tooltip" data-tooltip="I'm a looonnnnggg tooltip">
-            Hello World
+        <br>
+        <br>
+        <div class="tooltip tooltip-bottom" data-tooltip="I'm a tooltip">
+            Bottom
+        </div>
+        <br>
+        <br>
+        <div class="tooltip tooltip-left" data-tooltip="I'm a looonnnnggg tooltip">
+            Left
+        </div>
+        <br>
+        <br>
+        <div class="tooltip tooltip-right" data-tooltip="I'm a looonnnnggg tooltip">
+            Right
         </div>
 
         <xmp>
-            <div class="tooltip" data-tooltip="Hello there">
-                Caption
+            <div class="tooltip tooltip-top" data-tooltip="Hello there">
+                Top
             </div>
-            <div class="tooltip" data-tooltip="I'm a tooltip">
-                Hello World
+            <div class="tooltip tooltip-bottom" data-tooltip="I'm a tooltip">
+                Bottom
             </div>
-            <div class="tooltip" data-tooltip="I'm a looonnnnggg tooltip">
-                Hello World
+            <div class="tooltip tooltip-left" data-tooltip="I'm a looonnnnggg tooltip">
+                Left
+            </div>
+            <div class="tooltip tooltip-right" data-tooltip="I'm a looonnnnggg tooltip">
+                Right
             </div>
         </xmp>
 
