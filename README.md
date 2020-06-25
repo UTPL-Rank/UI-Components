@@ -6,6 +6,7 @@ Styled components in html and css
 - [Banner](https://utpl-rank.github.io/UI-Components/components/banner/)
 - [Buttons](https://utpl-rank.github.io/UI-Components/components/buttons/)
 
+- [Cards](https://utpl-rank.github.io/UI-Components/components/card/)
 - [Fabs](https://utpl-rank.github.io/UI-Components/components/fabs/)
 
 - [Tooltips](https://utpl-rank.github.io/UI-Components/components/Tooltips/)
