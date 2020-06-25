@@ -17,5 +17,3 @@ Styled components in html and css
 - [Menus](https://utpl-rank.github.io/UI-Components/components/menus/)
 
 - [Chips](https://utpl-rank.github.io/UI-Components/components/chips/)
-
-- [Selection Controls]()
