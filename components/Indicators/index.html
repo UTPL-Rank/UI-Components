@@ -13,7 +13,49 @@
 
 <body>
     <h1>indicator progress</h1>
+    <hr>
+    <section class="contenedor">
+        <h3>indicator linear: default</h3>
+        <h4>Action</h4>
+        <progress id="default" class="progreso Action" value="0" min="0" max="100"></progress>
+        <button class="btn tooltip" id="cargar" onclick="loadProgressBar('default')"
+            data-tooltip="Carga la barra de progreso">
+            Cargar
+        </button>
+    </section>
+    <h4>HTML</h4>
+    <xmp>
+        <section class="contenedor">
+            <h3>indicator linear: default</h3>
+            <h4>Action</h4>
+            <progress id="default" class="progreso Action" value="0" min="0" max="100"></progress>
+            <button class="btn tooltip" id="cargar" onclick="loadProgressBar('default')"
+                data-tooltip="Carga la barra de progreso">
+                Cargar
+            </button>
+        </section>
+    </xmp>
+    <H4>JAVA-SCRIPT</H4>
+    <xmp>
+        
+        function cargar() {
+            var barra = document.getElementById('default')
+            barra.value += 1
+        }
 
+        function loadProgressBar(id) {
+            var barra = document.getElementById(id)
+            barra.value = 0;
+            var incremento = setInterval(function () {
+                barra.value += 1
+            }, 25);
+        
+            setTimeout(function () {
+                clearInterval(incremento)
+            }, 5000)
+        }
+    </xmp>
+    <hr>
 
     <section class="contenedor">
         <h3>indicator linear: secondary</h3>
@@ -24,61 +66,78 @@
             Cargar
         </button>
     </section>
-
-    <section class="contenedor">
-        <h3>indicator linear: default</h3>
-        <h6>Indicator 0%:</h6>
-        <progress class="progreso" value="0" min="0" max="100"></progress>
-
-        <h6>Indicator 50%:</h6>
-        <progress class="progreso" value="50" min="0" max="100"></progress>
-
-        <h6>Indicator 100%:</h6>
-        <progress value=100 max=100 class="progreso"></progress>
-
-        <h4>Action</h4>
-        <progress id="default" class="progreso Action" value="0" min="0" max="100"></progress>
-        <input type="button" value="cargar" id="cargar" onclick="loadProgressBar('default')">
-
-    </section>
-
+    <h4>HTML</h4>
+    <xmp>
+        <section class="contenedor">
+            <h3>indicator linear: secondary</h3>
+            <h4>Action</h4>
+            <progress id="secondary" class="progreso secundary Action" value="0" min="0" max="100"></progress>
+            <button class="btn tooltip" id="cargar" onclick="loadProgressBar('secondary')"
+                data-tooltip="Carga la barra de progreso">
+                Cargar
+            </button>
+        </section>
+    </xmp>
+    <H4>JAVA-SCRIPT</H4>
+    <xmp>
+        function cargarSecondary() {
+            var barra = document.getElementById('secondary')
+            barra.value += 1
+        }
+        function loadProgressBar(id) {
+            var barra = document.getElementById(id)
+            barra.value = 0;
+            var incremento = setInterval(function () {
+                barra.value += 1
+            }, 25);
+        
+            setTimeout(function () {
+                clearInterval(incremento)
+            }, 5000)
+        }
+    </xmp>
+    <hr>
     <section class="contenedor">
         <h3>indicator linear: primary</h3>
-        <h6>Indicator 0%:</h6>
-        <progress class="progreso primary" value="0" min="0" max="100"></progress>
-
-        <h6>Indicator 50%:</h6>
-        <progress class="progreso primary" value="50" min="0" max="100"></progress>
-
-        <h6>Indicator 100%:</h6>
-        <progress class="progreso primary" value="100" min="0" max="100"></progress>
-
         <h4>Action</h4>
         <progress id="primary" class="progreso primary Action" value="0" min="0" max="100"></progress>
-        <input type="button" value="cargar" id="cargar" onclick="setInterval('cargarPrim()',25)">
-
+        <button class="btn tooltip" id="cargar" onclick="loadProgressBar('primary')"
+            data-tooltip="Carga la barra de progreso">
+            Cargar
+        </button>
     </section>
+    <h4>HTML</h4>
+    <xmp>
+        <section class="contenedor">
+            <h3>indicator linear: primary</h3>
+            <h4>Action</h4>
+            <progress id="primary" class="progreso primary Action" value="0" min="0" max="100"></progress>
+            <button class="btn tooltip" id="cargar" onclick="loadProgressBar('primary')"
+                data-tooltip="Carga la barra de progreso">
+                Cargar
+            </button>
+        </section>
 
-    <section class="contenedor">
-        <h3>indicator linear: secondary</h3>
-        <h6>Indicator 0%:</h6>
-        <progress class="progreso secundary" value="0" min="0" max="100"></progress>
+    </xmp>
+    <H4>JAVA-SCRIPT</H4>
+    <xmp>
+        function cargarPrim() {
+            var barra = document.getElementById('primary')
+            barra.value += 1
+        }
 
-        <h6>Indicator 50%:</h6>
-        <progress class="progreso secundary" value="50" min="0" max="100"></progress>
-
-        <h6>Indicator 100%:</h6>
-        <progress class="progreso secundary" value="100" min="0" max="100"></progress>
-
-        <h4>Action</h4>
-        <progress id="secondary" class="progreso secundary Action" value="0" min="0" max="100"></progress>
-        <input type="button" value="cargar" id="cargar" onclick="setInterval('cargarSecondary()',25)">
-
-    </section>
-
-
-
-
+        function loadProgressBar(id) {
+            var barra = document.getElementById(id)
+            barra.value = 0;
+            var incremento = setInterval(function () {
+                barra.value += 1
+            }, 25);
+        
+            setTimeout(function () {
+                clearInterval(incremento)
+            }, 5000)
+        }
+    </xmp>
 
 </body>
 
