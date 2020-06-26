@@ -1,0 +1,52 @@
+.card {
+    --card-border-radius: var(--space-1);
+    --card-inner-padding: var(--space-4);
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--card-border-radius);
+}
+
+/*Encabezado de la carta- header card*/
+
+.card .card_header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: var(--card-inner-padding);
+}
+
+/*titulo del encabezado - Title header*/
+
+.card .titles {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .titles h2 {
+    color: var(--color-black);
+}
+
+.card .titles span {
+    color: var(--color-dark);
+}
+
+/*icon header card*/
+
+.card .icon {
+    margin-right: var(--card-inner-padding);
+}
+
+/* pie de la carta - foot card*/
+
+.card .content {
+    padding: var(--card-inner-padding);
+    justify-self: stretch;
+}
+
+.card .content .actions {
+    justify-content: flex-start;
+    margin-top: var(--space-2);
+    margin-left: var(--space-n-3);
+}

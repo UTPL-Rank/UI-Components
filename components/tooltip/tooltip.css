@@ -1,0 +1,60 @@
+.tooltip {
+  --tooltip-max-width: 150px;
+  --tooltip-text-color: var(--text-white);
+  --tooltip-background-color: var(--color-dark);
+  --tooltip-space-top: var(--space-n-3);
+  --tooltip-space-left: var(--space-n-3);
+  --tooltip-space-right: var(--space-n-3);
+  --tooltip-space-bottom: var(--space-n-3);
+  --tooltip-padding: var(--space-1) var(--space-2);
+  display: inline-block;
+  position: relative;
+}
+
+.tooltip[data-tooltip]::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  background-color: var(--tooltip-background-color);
+  padding: var(--tooltip-padding);
+  color: var(--tooltip-text-color);
+  border-radius: 4px;
+  transition: opacity .3s;
+  display: none;
+  max-width: var(--tooltip-max-width);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 1200;
+}
+
+.tooltip[data-tooltip].tooltip-top::before {
+  top: 0;
+  left: 50%;
+  margin-top: var(--tooltip-space-top);
+  transform: translate(-50%, -100%);
+}
+
+.tooltip[data-tooltip].tooltip-bottom::before {
+  bottom: 0;
+  left: 50%;
+  margin-bottom: var(--tooltip-space-bottom);
+  transform: translate(-50%, 100%);
+}
+
+.tooltip[data-tooltip].tooltip-left::before {
+  left: 0;
+  top: 50%;
+  margin-left: var(--tooltip-space-left);
+  transform: translate(-100%, -50%);
+}
+
+.tooltip[data-tooltip].tooltip-right::before {
+  right: 0;
+  top: 50%;
+  margin-right: var(--tooltip-space-right);
+  transform: translate(100%, -50%);
+}
+
+.tooltip:hover::before {
+  display: block;
+}

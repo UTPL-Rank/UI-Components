@@ -3,19 +3,93 @@
 :root {
     --text-white: #ffffff;
     --color-white: #ffffff;
+    --color-black: #000000;
+    /* dark color */
+    --color-dark-darker: #000000;
+    --color-dark-dark: #363636;
+    --color-dark: #8b8b8b;
+    --color-dark-light: #949494;
+    --color-dark-lighter: #dbdbdb;
+    /* base color */
+    --color-base-darker: #3d038d;
     --color-base-dark: #5100c2;
     --color-base: #6200EE;
-    --color-base-light: #6300ee70;
-    --color-primary-dark: #008080;
-    --color-primary: #008080;
-    --color-primary-light: #00808026;
-    --color-accent: #d1b932;
+    --color-base-light: #6e10f1;
+    --color-base-lighter: #8d49ee;
+    /* primary */
+    --color-primary-darker: #061a38;
+    --color-primary-dark: #0d3570;
+    --color-primary: #2c7be5;
+    --color-primary-light: #95bcf2;
+    --color-primary-lighter: #c9ddf8;
+    /* accent */
+    --color-accent-darkest: #0c2c35;
+    --color-accent-dark: #19596b;
+    --color-accent: #39afd1;
+    --color-accent-light: #9cd6e7;
+    --color-accent-lighter: #cdeaf3;
+    /* warn */
+    --color-warn-darkest: #4a3603;
+    --color-warn-dark: #956c07;
+    --color-warn: #f6c343;
+    --color-warn-light: #fae1a0;
+    --color-warn-lighter: #fcf0cf;
+    /* danger */
+    --color-danger-darkest: #3f0712;
+    --color-danger-dark: #7e0f24;
+    --color-danger: #e63757;
+    --color-danger-light: #f29bab;
+    --color-danger-lighter: #f8ccd4;
+    /* error */
     --color-error: #80001c;
     --color-enable: #21212114;
     --color-hover: #00000014;
     --color-focus: #0000001f;
     --color-black: #000000;
     --color-disabled: #00000061;
+    /* ======================== */
+    /* space utilities */
+    /* ======================== */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-7: 1.75rem;
+    --space-8: 2rem;
+    --space-9: 2.25rem;
+    --space-10: 2.5rem;
+    --space-11: 2.75rem;
+    --space-12: 3rem;
+    --space-14: 3.5rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-28: 7rem;
+    --space-36: 9rem;
+    --space-44: 11rem;
+    --space-52: 13rem;
+    --space-60: 15rem;
+    --space-n-1: -0.25rem;
+    --space-n-2: -0.5rem;
+    --space-n-3: -0.75rem;
+    --space-n-4: -1rem;
+    --space-n-5: -1.25rem;
+    --space-n-6: -1.5rem;
+    --space-n-7: -1.75rem;
+    --space-n-8: -2rem;
+    --space-n-9: -2.25rem;
+    --space-n-10: -2.5rem;
+    --space-n-11: -2.75rem;
+    --space-n-12: -3rem;
+    --space-n-14: -3.5rem;
+    --space-n-16: -4rem;
+    --space-n-20: -5rem;
+    --space-n-28: -7rem;
+    --space-n-36: -9rem;
+    --space-n-44: -11rem;
+    --space-n-52: -13rem;
+    --space-n-60: -15rem;
 }
 
 *, *::before, *::after {

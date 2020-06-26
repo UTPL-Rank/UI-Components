@@ -4,140 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="dialog.css">
+    <title>Dialog</title>
+    <link rel="stylesheet" href="../../ui-components.css">
 
-    <link rel="stylesheet" href="../buttons/buttons.css">
-    <link rel="stylesheet" href="../../base/text-theme.css">
-    <link rel="stylesheet" href="../../base/base.css">
+    <style>
+        header {
+            margin: var(--space-4) auto;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--color-base);
+        }
 
-
+        section {
+            margin-top: var(--space-10);
+            margin-bottom: var(--space-10);
+        }
+    </style>
 </head>
 
-<body>
-    <div class="dialog" style="margin: 20px;  width: 280px;">
-        <div class="dialog-header">
-            <h3>Subtitle 1</h3>
+<body class="container">
+    <header>
+        <h1 class="text-display-2">
+            Dialog
+        </h1>
+    </header>
+    <section>
+        <div class="dialog transition-shadow shadow-3 hover:shadow-24">
+            <div class="dialog-header text-title">
+                <h3>Subtitle 1</h3>
+            </div>
+            <div class="dialog-content">
+                <spam>
+                    Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </spam>
+            </div>
+            <div class="dialog-actions">
+                <button class="btn">Action 1</button>
+                <button class="btn">Action 2</button>
+            </div>
         </div>
-        <div class="dialog-content">
-            <spam>
-                Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            </spam>
-        </div>
-        <div class="dialog-actions">
-            <button class="btn">Action 1</button>
-            <button class="btn">Action 2</button>
-        </div>
-    </div>
+    </section>
 
-    <br>
-    <div class="dialog" style="margin: 20px;  width: 280px;">
-        <div class="dialog-header-center">
-            <h3>Subtitle 1</h3>
+    <section>
+        <div class="dialog transition-shadow shadow-3 hover:shadow-24">
+            <div class="dialog-header-center">
+                <h3>Subtitle 1</h3>
+            </div>
+            <div class="dialog-content">
+                <spam>
+                    Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </spam>
+            </div>
+            <div class="dialog-actions">
+                <button class="btn">Action 1</button>
+                <button class="btn">Action 2</button>
+            </div>
         </div>
-        <div class="dialog-content">
-            <spam>
-                Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            </spam>
-        </div>
-        <div class="dialog-actions">
-            <button class="btn">Action 1</button>
-            <button class="btn">Action 2</button>
-        </div>
-    </div>
-    <div class="dialog" style="margin: 20px;  width: 280px;">
-        <div class="dialog-header-center">
-            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z"
-                    fill="#6200EE" />
-            </svg>
-            <h3>Subtitle 1</h3>
-        </div>
-        <div class="dialog-content">
-            <spam>
-                Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            </spam>
-        </div>
-        <div class="dialog-actions">
-            <button class="btn">Action 1</button>
-            <button class="btn">Action 2</button>
-        </div>
-    </div>
-    <div class="dialog" style="margin: 20px;  width: 280px;">
-        <div class="dialog-header-center">
-            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z"
-                    fill="#6200EE" />
-            </svg>
-            <h3 class="text-title">title 1</h3>
-            <h4 class="text-subtitle">Subtitle 1</h4>
-        </div>
-        <div class="dialog-content">
-            <spam>
-                Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            </spam>
-        </div>
-        <div class="dialog-actions">
-            <button class="btn">Action 1</button>
-            <button class="btn">Action 2</button>
-        </div>
-    </div>
-    <!-- <div class="dialog icon" style="margin: 20px;  width: 280px;">
-        <div class="dialog icon head">
-            <div class="icon">
+    </section>
+    <section>
+        <div class="dialog transition-shadow shadow-3 hover:shadow-24">
+            <div class="dialog-header-center">
                 <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z"
                         fill="#6200EE" />
                 </svg>
-
+                <h3>Subtitle 1</h3>
             </div>
-            <h3>Subtitle 1</h3>
+            <div class="dialog-content">
+                <spam>
+                    Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </spam>
+            </div>
+            <div class="dialog-actions">
+                <button class="btn">Action 1</button>
+                <button class="btn">Action 2</button>
+            </div>
         </div>
-        <div class="dialog icon mesage">
-            <spam>Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </spam>
+    </section>
+    <section>
+        <div class="dialog transition-shadow shadow-3 hover:shadow-24">
+            <div class="dialog-header-center">
+                <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z"
+                        fill="#6200EE" />
+                </svg>
+                <h3 class="text-title">title 1</h3>
+                <h4 class="text-subtitle">Subtitle 1</h4>
+            </div>
+            <div class="dialog-content">
+                <spam>
+                    Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </spam>
+            </div>
+            <div class="dialog-actions">
+                <button class="btn">Action 1</button>
+                <button class="btn">Action 2</button>
+            </div>
         </div>
-        <div class="dialog icon foot">
-            <divc class="final">
-                <h2>
-                    <button class="btn">Action 1</button>
-                    <button class="btn">Action 2</button>
-                </h2>
+    </section>
+    <section>
+        <div class="dialog transition-shadow shadow-3 hover:shadow-24">
+            <div class="dialog-content">
+                Discard draft
+            </div>
+            <div class="dialog-actions">
+                <button class="btn">Action 1</button>
+                <button class="btn btn-primary">Action 2</button>
+            </div>
         </div>
-    </div> -->
-    <br>
-    <div class="dialog" style="margin: 20px;  width: 280px;">
-        <div class="dialog-content">
-            Discard draft
-        </div>
-        <div class="dialog-actions">
-            <button class="btn">Action 1</button>
-            <button class="btn btn-primary">Action 2</button>
-        </div>
-    </div>
-    <!-- <div class="dialog oneline" style="margin: 20px;  width: 280px;">
-
-        <div class="dialog oneline mesage">
-            <spam>Discard draft </spam>
-        </div>
-        <div class="dialog oneline foot">
-            <divc class="final">
-                <h2>
-                    <button class="btn">Action 1</button>
-                    <button class="btn">Action 2</button>
-                </h2>
-        </div>
-    </div>
-
-    </div> -->
-
+    </section>
 
 </body>
 

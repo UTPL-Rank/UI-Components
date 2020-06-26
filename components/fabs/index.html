@@ -5,39 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabs</title>
-    
-    <link rel="stylesheet" type="text/css" href="../../base/base.css">
-    <link rel="stylesheet" type="text/css" href="fabs.css">
+
+    <link rel="stylesheet" type="text/css" href="../../ui-components.css">
+    <style>
+        header {
+            margin: var(--space-4) auto;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--color-base);
+        }
+
+        section {
+            margin-top: var(--space-10);
+            margin-bottom: var(--space-10);
+        }
+    </style>
 </head>
 
-<body>
+<body class="container">
     <header>
-        <h1 class="text-display-1">Fabs Buttons</h1>
+        <h1 class="text-display-2">Fabs Buttons</h1>
     </header>
-
-    <hr>
 
     <section>
         <h2 class="text-headline">
             Fab
         </h2>
 
-        <button class="fab">🎉</button>
-        <button class="fab fab-primary">🎉</button>
-        <button class="fab fab-accent">🎉</button>
-        <button class="fab fab-warn">🎉</button>
-        <button class="fab fab-danger">🎉</button>
-        <button class="fab fab-variant">🎉</button>
-        <a class="fab">🎉</a>
+        <button class="fab transition-shadow shadow-3 hover:shadow-24 text-button">🎉</button>
+        <a class="fab transition-shadow shadow-3 hover:shadow-24 text-button">🎉</a>
 
         <xmp>
-            <button class="fab">🎉</button>
-            <button class="fab fab-primary">🎉</button>
-            <button class="fab fab-accent">🎉</button>
-            <button class="fab fab-warn">🎉</button>
-            <button class="fab fab-danger">🎉</button>
-            <button class="fab fab-variant">🎉</button>
-            <a class="fab">🎉</a>
+            <button class="fab transition-shadow shadow-3 hover:shadow-24 text-button">🎉</button>
+            <a class="fab transition-shadow shadow-3 hover:shadow-24 text-button">🎉</a>
         </xmp>
     </section>
     <hr>
@@ -45,23 +44,13 @@
         <h2 class="text-headline">
             Mini Fab
         </h2>
-        
-        <button class="mini-fab">🎁</button>
-        <button class="mini-fab mini-primary">🎁</button>
-        <button class="mini-fab mini-accent">🎁</button>
-        <button class="mini-fab mini-warn">🎁</button>
-        <button class="mini-fab mini-danger">🎁</button>
-        <button class="mini-fab mini-variant">🎁</button>
-        <a class="mini-fab">🎁</a>
+
+        <button class="fab mini-fab transition-shadow shadow-3 hover:shadow-12 text-button">🎁</button>
+        <a class="fab mini-fab transition-shadow shadow-3 hover:shadow-12 text-button">🎁</a>
 
         <xmp>
-            <button class="mini-fab">🎁</button>
-            <button class="mini-fab mini-primary">🎁</button>
-            <button class="mini-fab mini-accent">🎁</button>
-            <button class="mini-fab mini-warn">🎁</button>
-            <button class="mini-fab mini-danger">🎁</button>
-            <button class="mini-fab mini-variant">🎁</button>
-            <a class="mini-fab">🎁</a>
+            <button class="fab mini-fab transition-shadow shadow-3 hover:shadow-12 text-button">🎁</button>
+            <a class="fab mini-fab transition-shadow shadow-3 hover:shadow-12 text-button">🎁</a>
         </xmp>
     </section>
     <hr>
@@ -70,49 +59,31 @@
             Extended Fab
         </h2>
 
-        <button class="extended-fab">
-            <div class="icon">🚀</div> Text
+        <button class="fab extended-fab text-button transition-shadow shadow-3 hover:shadow-12">
+            <div class="icon">🚀</div>
+            <span>
+                Text
+            </span>
         </button>
-        <button class="extended-fab extended-primary">
-            <div class="icon">🚀</div> Text
-        </button>
-        <button class="extended-fab extended-accent">
-            <div class="icon">🚀</div> Text
-        </button>
-        <button class="extended-fab extended-warn">
-            <div class="icon">🚀</div> Text
-        </button>
-        <button class="extended-fab extended-danger">
-            <div class="icon">🚀</div> Text
-        </button>
-        <button class="extended-fab extended-variant">
-            <div class="icon">🚀</div> Text
-        </button>
-        <a class="extended-fab">
-            <div class="icon">🚀</div> Text
+        <a class="fab extended-fab text-button transition-shadow shadow-3 hover:shadow-12">
+            <div class="icon">🚀</div>
+            <span>
+                Text
+            </span>
         </a>
 
         <xmp>
-            <button class="extended-fab">
-                <div class="icon">🚀</div> Text
+            <button class="fab extended-fab text-button transition-shadow shadow-3 hover:shadow-12">
+                <div class="icon">🚀</div>
+                <span>
+                    Text
+                </span>
             </button>
-            <button class="extended-fab extended-primary">
-                <div class="icon">🚀</div> Text
-            </button>
-            <button class="extended-fab extended-accent">
-                <div class="icon">🚀</div> Text
-            </button>
-            <button class="extended-fab extended-warn">
-                <div class="icon">🚀</div> Text
-            </button>
-            <button class="extended-fab extended-danger">
-                <div class="icon">🚀</div> Text
-            </button>
-            <button class="extended-fab extended-variant">
-                <div class="icon">🚀</div> Text
-            </button>
-            <a class="extended-fab">
-                <div class="icon">🚀</div> Text
+            <a class="fab extended-fab text-button transition-shadow shadow-3 hover:shadow-12">
+                <div class="icon">🚀</div>
+                <span>
+                    Text
+                </span>
             </a>
         </xmp>
     </section>

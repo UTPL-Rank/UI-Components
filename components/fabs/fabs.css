@@ -1,63 +1,34 @@
 /*----FAB----*/
 
 .fab {
+    --fab-padding: var(--space-4);
+    --fab-background-color: var(--color-accent);
     display: inline-block;
-    padding: 16px;
-    background-color: #03DAC5;
+    padding: var(--fab-padding);
+    background-color: var(--fab-background-color);
     border: none;
-    font-size: 18px;
     text-decoration: none;
-    transition: ease-in-out 0.3s;
     cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.14);
-}
-
-.fab:hover, .fab:focus {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.295), 0px 1px 10px rgba(0, 0, 0, 0.199), 0px 4px 5px rgba(0, 0, 0, 0.267);
+    border-radius: 9999px;
 }
 
 /*----FAB MINI----*/
 
 .mini-fab {
-    display: inline-block;
-    padding: 8px;
-    background-color: #03DAC5;
-    border: none;
-    font-size: 18px;
-    text-decoration: none;
-    transition: ease-in-out 0.3s;
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.14);
-}
-
-.mini-fab:hover, .mini-fab:focus {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.295), 0px 1px 10px rgba(0, 0, 0, 0.199), 0px 4px 5px rgba(0, 0, 0, 0.267);
+    --fab-padding: var(--space-2);
 }
 
 /*----FAB EXTENDED----*/
 
 .extended-fab {
-    padding: 10px 25px;
-    background-color: #03DAC5;
-    border: none;
-    font-size: 18px;
-    text-decoration: none;
-    transition: ease-in-out 0.3s;
-    cursor: pointer;
-    border-radius: 28px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.14);
-    /* direction */
+    --extended-fab-inner-margin: var(--space-2);
+    --fab-padding: var(--space-4) var(--space-6);
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    width: min-content;
 }
 
-.extended-fab .icon {
-    margin-right: 8px;
-}
-
-.extended-fab:hover, .extended-fab:focus {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.14);
+.extended-fab>*:not(:last-child) {
+    margin-right: var(--extended-fab-inner-margin);
 }
