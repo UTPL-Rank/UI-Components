@@ -37,5 +37,8 @@
 
 .dialog-actions {
     align-self: flex-end;
+}
+
+.dialog-actions .button:last-child {
     margin-right: var(--space-n-3);
 }
