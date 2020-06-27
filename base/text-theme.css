@@ -55,7 +55,7 @@ p, .text-body1 {
     font-size: 1rem;
 }
 
-button, .text-button {
+.button, .button-outline, .button-contained, .text-button {
     font-weight: 600;
     font-size: 0.875rem;
     text-transform: uppercase;
