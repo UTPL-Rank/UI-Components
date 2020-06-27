@@ -62,8 +62,8 @@ p, .text-body1 {
     text-decoration: none;
 }
 
-small, .text-caption {
-    font-weight: 600;
+small, .text-caption, .tooltip[data-tooltip]::before {
+    font-weight: 500;
     font-size: 0.75rem;
 }
 
