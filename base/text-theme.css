@@ -73,6 +73,11 @@ small, .text-caption, .tooltip[data-tooltip]::before {
     text-transform: uppercase;
 }
 
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
 /* text colores */
 
 .text-primary {
