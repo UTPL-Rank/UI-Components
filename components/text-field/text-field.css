@@ -69,4 +69,7 @@ main{
     
     
 }
+.container_.disabled *{
+background: none;
+}
 
