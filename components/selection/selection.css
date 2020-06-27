@@ -1,14 +1,60 @@
-/*///////////////////////////////*/
-
 /*//////////// Checkboxes ////////////*/
 
-/*///////////////////////////////*/
+.checkbox {
+    --checkbox-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+}
 
-/*///////////////////////////////*/
+.checkbox.checkbox-accent {
+    --checkbox-color: var(--color-warn);
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox .icon+span {
+    margin-left: 5px;
+}
+
+.checkbox .icon {
+    width: var(--space-5);
+    height: var(--space-5);
+    border-radius: 4px;
+    border: 1px solid var(--checkbox-color);
+    background-color: white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.checkbox .icon>* {
+    font-size: 14px;
+}
+
+.checkbox input:checked+.icon {
+    background-color: var(--checkbox-color);
+}
+
+.checkbox input+.icon::before {
+    content: '';
+    position: absolute;
+    width: var(--space-10);
+    height: var(--space-10);
+    border-radius: 99999px;
+    opacity: 0;
+    background-color: var(--checkbox-color);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.checkbox:hover input+.icon::before {
+    opacity: 0.2;
+}
 
 /*//////////// Radio ////////////*/
-
-/*///////////////////////////////*/
 
 .custom-radio-checkbox {
     display: inline-flex;
@@ -42,55 +88,6 @@
 /*//////////// Switch ////////////*/
 
 /*///////////////////////////////*/
-
-.checkbox {
-    display: flex;
-    align-items: center;
-}
-
-.checkbox input[type="checkbox"] {
-    display: none;
-}
-
-.checkbox .icon+span {
-    margin-left: 5px;
-}
-
-.checkbox .icon {
-    width: 18px;
-    height: 18px;
-    border-radius: 4px;
-    border: 1px solid teal;
-    background-color: white;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease-in-out;
-}
-
-.checkbox .icon>* {
-    font-size: 14px;
-}
-
-.checkbox input:checked+.icon {
-    background-color: teal;
-}
-
-.checkbox input+.icon::before {
-    content: '';
-    position: absolute;
-    width: 34px;
-    height: 34px;
-    border-radius: 99999px;
-    opacity: 0;
-    background-color: teal;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.checkbox:hover input+.icon::before {
-    opacity: 0.2;
-}
 
 .switch {
     position: relative;

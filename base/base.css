@@ -1,7 +1,6 @@
 @import url('./text-theme.css');
 @import url('./utils.css');
 :root {
-    --text-white: #ffffff;
     --color-white: #ffffff;
     --color-black: #000000;
     /* contrast colors */
