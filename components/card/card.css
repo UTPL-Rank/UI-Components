@@ -29,7 +29,7 @@
 }
 
 .card .titles span {
-    color: var(--color-dark);
+    color: var(--color-low-contrast);
 }
 
 /*icon header card*/

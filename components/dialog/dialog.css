@@ -10,7 +10,6 @@
     flex-direction: column;
     border-radius: var(--dialog-border-radius);
     padding: var(--dialog-padding);
-    color: var(--color-dark-dark);
 }
 
 .dialog>*:not(:last-child) {

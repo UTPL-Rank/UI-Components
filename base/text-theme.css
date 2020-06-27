@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 body {
+    --default-text-color: var(--color-black);
     font-family: 'Roboto', sans-serif;
+    color: var(--default-text-color);
 }
 
 .text-display-4 {
@@ -69,4 +71,34 @@ small, .text-caption {
     font-weight: 400;
     font-size: 0.75rem;
     text-transform: uppercase;
+}
+
+/* text colores */
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.text-warn {
+    color: var(--color-warn);
+}
+
+.text-danger {
+    color: var(--color-danger);
+}
+
+.text-low-contrast {
+    color: var(--color-low-contrast);
+}
+
+.text-high-contrast {
+    color: var(--color-high-contrast);
+}
+
+.text-reduce-contrast {
+    color: var(--color-high-contrast);
 }

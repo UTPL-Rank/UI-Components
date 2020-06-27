@@ -38,14 +38,13 @@
     padding: var(--dropdown-item-padding);
     text-decoration: none;
     background-color: var(--dropdown-content-background-color);
-    color: var(--color-dark-dark);
     border: none;
     outline: none;
     cursor: pointer;
 }
 
 .dropdown-content .dropdown-item:hover {
-    background-color: var(--color-dark-lighter);
+    background-color: var(--color-reduce-contrast);
 }
 
 .dropdown-content .dropdown-item>*:not(:last-child) {
