@@ -21,7 +21,7 @@
     text-overflow: ellipsis;
 }
 
-.banner-one-line .btn {
+.banner-one-line .button {
     margin-right: var(--space-n-3);
 }
 

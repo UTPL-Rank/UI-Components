@@ -6,8 +6,8 @@
     --color-black: #000000;
     /* contrast colors */
     --color-low-contrast: #252525;
-    --color-high-contrast: #dddddd;
-    --color-reduce-contrast: #6d6d6d;
+    --color-high-contrast: #c7c7c7;
+    --color-reduce-contrast: #666666;
     /* base color */
     --color-base-darker: #3d038d;
     --color-base-dark: #5100c2;
@@ -38,13 +38,6 @@
     --color-danger: #e63757;
     --color-danger-light: #f29bab;
     --color-danger-lighter: #f8ccd4;
-    /* error */
-    --color-error: #80001c;
-    --color-enable: #21212114;
-    --color-hover: #00000014;
-    --color-focus: #0000001f;
-    --color-black: #000000;
-    --color-disabled: #00000061;
     /* ======================== */
     /* space utilities */
     /* ======================== */

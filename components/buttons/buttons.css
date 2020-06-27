@@ -1,6 +1,6 @@
 /* base buttons */
 
-.btn, .btn-outline, .btn-contained {
+.button, .button-outline, .button-contained {
     /* defaults */
     --button-background-color: var(--button-contrast-color);
     --button-border-color: var(--button-background:);
@@ -30,55 +30,54 @@
 
 /*  */
 
-.btn {
+.button {
     --button-background-color: transparent;
     --button-border-color: transparent;
     --button-text-color: var(--color-black);
 }
 
-.btn:hover, .btn:hover {
-    --button-background-color: var(--color-reduce-contrast);
-    --button-border-color: var(--color-reduce-contrast);
+.button:hover, .button:hover {
+    --button-background-color: var(--color-high-contrast);
     --button-text-color: var(--color-black);
 }
 
-.btn.btn-primary {
+.button.button-primary {
     --button-background-color: transparent;
     --button-border-color: transparent;
     --button-text-color: var(--color-primary);
 }
 
-.btn.btn-primary:hover, .btn.btn-primary:hover {
+.button.button-primary:hover, .button.button-primary:hover {
     --button-background-color: var(--color-primary-lighter);
     --button-border-color: var(--color-primary-lighter);
     --button-text-color: var(--color-primary);
 }
 
-.btn.btn-warn {
+.button.button-warn {
     --button-background-color: transparent;
     --button-border-color: transparent;
     --button-text-color: var(--color-warn);
 }
 
-.btn.btn-warn:hover, .btn.btn-warn:hover {
+.button.button-warn:hover, .button.button-warn:hover {
     --button-background-color: var(--color-warn-lighter);
     --button-border-color: var(--color-warn-lighter);
     --button-text-color: var(--color-warn);
 }
 
-.btn.btn-danger {
+.button.button-danger {
     --button-background-color: transparent;
     --button-border-color: transparent;
     --button-text-color: var(--color-danger);
 }
 
-.btn.btn-danger:hover, .btn.btn-danger:hover {
+.button.button-danger:hover, .button.button-danger:hover {
     --button-background-color: var(--color-danger-lighter);
     --button-border-color: var(--color-danger-lighter);
     --button-text-color: var(--color-danger);
 }
 
-.btn:disabled, .btn.disabled {
+.button:disabled, .button.disabled {
     --button-background-color: transparent;
     --button-border-color: transparent;
     --button-text-color: var(--color-reduce-contrast);
@@ -87,114 +86,114 @@
 
 /*  */
 
-/* BTN OUTLINE */
+/* button OUTLINE */
 
 /*  */
 
-.btn-outline {
+.button-outline {
     --button-background-color: transparent;
-    --button-border-color: var(--color-reduce-contrast);
+    --button-border-color: var(--color-high-contrast);
     --button-text-color: var(--color-black);
 }
 
-.btn-outline:hover, .btn-outline:hover {
-    --button-background-color: var(--color-reduce-contrast);
-    --button-border-color: var(--color-black);
+.button-outline:hover, .button-outline:hover {
+    --button-background-color: var(--color-high-contrast);
+    --button-border-color: var(--color-reduce-contrast);
 }
 
-.btn-outline.btn-primary {
+.button-outline.button-primary {
     --button-background-color: transparent;
-    --button-border-color: var(--color-reduce-contrast);
+    --button-border-color: var(--color-high-contrast);
     --button-text-color: var(--color-primary);
 }
 
-.btn-outline.btn-primary:hover, .btn-outline.btn-primary:hover {
+.button-outline.button-primary:hover, .button-outline.button-primary:hover {
     --button-background-color: var(--color-primary-lighter);
     --button-border-color: var(--color-primary);
 }
 
-.btn-outline.btn-warn {
+.button-outline.button-warn {
     --button-background-color: transparent;
-    --button-border-color: var(--color-reduce-contrast);
+    --button-border-color: var(--color-high-contrast);
     --button-text-color: var(--color-warn);
 }
 
-.btn-outline.btn-warn:hover, .btn-outline.btn-warn:hover {
+.button-outline.button-warn:hover, .button-outline.button-warn:hover {
     --button-background-color: var(--color-warn-lighter);
     --button-border-color: var(--color-warn);
 }
 
-.btn-outline.btn-danger {
+.button-outline.button-danger {
     --button-background-color: transparent;
-    --button-border-color: var(--color-reduce-contrast);
+    --button-border-color: var(--color-high-contrast);
     --button-text-color: var(--color-danger);
 }
 
-.btn-outline.btn-danger:hover, .btn-outline.btn-danger:hover {
+.button-outline.button-danger:hover, .button-outline.button-danger:hover {
     --button-background-color: var(--color-danger-lighter);
     --button-border-color: var(--color-danger);
 }
 
-.btn-outline:disabled, .btn-outline.disabled {
+.button-outline:disabled, .button-outline.disabled {
     --button-background-color: transparent;
-    --button-border-color: transparent;
+    --button-border-color: var(--color-danger-lighter);
     --button-text-color: var(--color-reduce-contrast);
     pointer-events: none;
 }
 
 /*  */
 
-/* BTN CONTAINED */
+/* button CONTAINED */
 
 /*  */
 
-.btn-contained {
+.button-contained {
     --button-background-color: var(--color-low-contrast);
     --button-border-color: var(--color-low-contrast);
     --button-text-color: var(--color-white);
 }
 
-.btn-contained:hover, .btn-contained:hover {
+.button-contained:hover, .button-contained:hover {
     --button-background-color: var(--color-reduce-contrast);
     --button-border-color: var(--color-reduce-contrast);
 }
 
-.btn-contained.btn-primary {
+.button-contained.button-primary {
     --button-background-color: var(--color-primary);
     --button-border-color: var(--color-primary);
     --button-text-color: var(--color-white);
 }
 
-.btn-contained.btn-primary:hover, .btn-contained.btn-primary:hover {
+.button-contained.button-primary:hover, .button-contained.button-primary:hover {
     --button-background-color: var(--color-primary-light);
     --button-border-color: var(--color-primary-light);
 }
 
-.btn-contained.btn-warn {
+.button-contained.button-warn {
     --button-background-color: var(--color-warn);
     --button-border-color: var(--color-warn);
     --button-text-color: var(--color-black);
 }
 
-.btn-contained.btn-warn:hover, .btn-contained.btn-warn:hover {
+.button-contained.button-warn:hover, .button-contained.button-warn:hover {
     --button-background-color: var(--color-warn-light);
     --button-border-color: var(--color-warn-light);
 }
 
-.btn-contained.btn-danger {
+.button-contained.button-danger {
     --button-background-color: var(--color-danger);
     --button-border-color: var(--color-danger);
     --button-text-color: var(--color-white);
 }
 
-.btn-contained.btn-danger:hover, .btn-contained.btn-danger:hover {
+.button-contained.button-danger:hover, .button-contained.button-danger:hover {
     --button-background-color: var(--color-danger-light);
     --button-border-color: var(--color-danger-light);
 }
 
-.btn-contained:disabled, .btn-contained.disabled {
+.button-contained:disabled, .button-contained.disabled {
     --button-background-color: var(--color-reduce-contrast);
-    --button-border-color: var(--color-reduce-contrast);
+    --button-border-color: var(--button-border-color);
     --button-text-color: var(--color-white);
     pointer-events: none;
 }
