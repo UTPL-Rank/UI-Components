@@ -1,22 +1,81 @@
-*{
+* {
     margin: 0;
     padding: 0;
-   
 }
-main{
+
+main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-family: roboto;
-    
 }
-.container_{
+
+.text-field {
+    --text-field-outline-color: black;
+}
+
+.text-field-outline {
+    position: relative;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--text-field-outline-color);
+    border-radius: 4px;
+}
+
+.text-field-outline:focus-within {
+    --text-field-outline-color: teal;
+    color: var(--text-field-outline-color);
+}
+
+.text-field-outline input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+}
+
+.text-field-outline .icon {
+    margin-left: 16px;
+    color: var(--text-field-outline-color);
+}
+
+.text-field-outline label {
+    position: absolute;
+    top: 0;
+    padding: 0 4px;
+    margin-left: -4px;
+    background-color: white;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+    color: var(--text-field-outline-color);
+}
+
+.text-field.error {
+    --text-field-outline-color: red;
+}
+
+.text-field.error .text-field-error {
+    display: block;
+    color: var(--text-field-outline-color);
+}
+
+.text-field .text-field-error {
+    display: none;
+}
+
+.text-field.error .text-field-info {
+    display: none;
+}
+
+.container_ {
     position: relative;
 }
-.container_ .input-area{
-    outline:  none;
-    border:1px solid #dadce0;
+
+.container_ .input-area {
+    outline: none;
+    border: 1px solid #dadce0;
     padding: 16px 45px 16px 16px;
     font-size: 18px;
     border-radius: 5px;
@@ -24,52 +83,51 @@ main{
     display: flex;
     flex-direction: row;
 }
-.container_ .input-area:focus{
-    border: 2px solid #6200EE;;
-    
-}
-.container_.error .input-area:focus{
-    border: 2px solid #B00020;
-    
+
+.container_ .input-area:focus {
+    border: 2px solid #6200EE;
+    ;
 }
 
-.container_ .input-area:focus + .label{
+.container_.error .input-area:focus {
+    border: 2px solid #B00020;
+}
+
+.container_ .input-area:focus+.label {
     top: -8px;
     padding: 0px 3px;
     font-size: 12px;
-    color: #6200EE;;
-    
+    color: #6200EE;
+    ;
 }
-.container_.error .input-area:focus + .label{
+
+.container_.error .input-area:focus+.label {
     top: -8px;
     padding: 0px 3px;
     font-size: 12px;
     color: #B00020
-    
 }
-.container_  .text-up{
+
+.container_ .text-up {
     color: rgba(0, 0, 0, 0.6);
     font-size: 12px;
 }
 
-.container_ .label{
+.container_ .label {
     color: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 20px;
     left: 16px;
-   
     background: #ffffff;
     transition: 0.3s;
-    
-}
-.container_ .icon{
-    position:absolute;
-    right:16px;
-    top:16px;
-    
-    
-}
-.container_.disabled *{
-background: none;
 }
 
+.container_ .icon {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.container_.disabled * {
+    background: none;
+}

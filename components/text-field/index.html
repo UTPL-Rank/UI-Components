@@ -5,16 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="text-field.css">
-    <link rel="stylesheet" href="../../base/text-theme.css">
+    <link rel="stylesheet" href="../../ui-components.css">
+    <script src="https://kit.fontawesome.com/fa1c616d6e.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <h1>
-    Text Field
+        Text Field
     </h1>
     <hr>
     <main>
+
+        <div class="text-field">
+            <div class="text-field-outline">
+                <label for="">Label</label>
+                <input type="text">
+                <button class=" button icon">
+                    <i class="fas fa-lock-open"></i>
+                </button>
+            </div>
+            <span class="text-field-error">
+                Ocurrio un error
+            </span>
+            <span class="text-field-info">
+                Debe contener 6 caracteres
+            </span>
+        </div>
+        <div class="text-field error">
+            <div class="text-field-outline">
+                <label for="">Label</label>
+                <input type="text">
+                <div class="icon">
+                    <i class="fas fa-lock-open"></i>
+                </div>
+            </div>
+            <span class="text-field-error">
+                Ocurrio un error
+            </span>
+            <span class="text-field-info">
+                Debe contener 6 caracteres
+            </span>
+        </div>
+
         <div class="container_">
             <input type="password" id="inputField" required class="input-area">
             <label for="inputField" class="label">Label</label>
@@ -25,7 +58,7 @@
                         fill="black" fill-opacity="0.6" />
                 </svg>
             </a>
-            <label for="inputField" class="text-up">Focused</label>
+            <span for="inputField" class="text-up">Focused</span>
 
 
         </div>
@@ -45,7 +78,7 @@
 
         </div>
         <br>
-        <div class="container_ disabled" >
+        <div class="container_ disabled">
             <input disabled type="password" id="inputField" required class="input-area">
             <label disable for="inputField" class="label">Label</label>
             <a href="" class="icon">
