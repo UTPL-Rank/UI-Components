@@ -102,3 +102,11 @@ small, .text-caption {
 .text-reduce-contrast {
     color: var(--color-high-contrast);
 }
+
+/* text utilities */
+
+.text-truncate {
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
