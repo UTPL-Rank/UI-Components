@@ -43,10 +43,13 @@
 .card .content {
     padding: var(--card-inner-padding);
     justify-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card .content .actions {
-    justify-content: flex-start;
+    align-self: flex-start;
     margin-top: var(--space-2);
     margin-left: var(--space-n-3);
     margin-bottom: var(--space-n-2);

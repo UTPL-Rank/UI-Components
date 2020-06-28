@@ -1,59 +1,70 @@
 .list {
-    margin: 40px;
-    width: 360px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.list-item {
-    display: flex;
-    padding-left: 16px;
-    margin-top: 24px;
-}
-
-.list-item--text {
-    display: flex;
-    padding: 16px 16px 16px 0px;
-    flex-grow: 1;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.list-item--text.list-divider {
-    border-bottom: 1px solid rgba(33, 33, 33, 0.08);
-}
-
-.list-item--text a {
-    margin-left: 16px;
-}
-
-.more-lines {
     display: flex;
     flex-direction: column;
 }
 
-.icon {
+.list-item {
     display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    align-items: stretch;
+    width: 100%;
+}
+
+.list-item:hover {
+    background-color: var(--color-low-contrast);
+}
+
+.list-item:focus {
+    background-color: var(--color-reduce-contrast);
+}
+
+.list-item--content {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: var(--space-3) var(--space-4);
+    flex-grow: 1;
+    justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
-.icon.a {
-    margin: 16px 32px 16px 0px;
+.list-item--content::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--color-reduce-contrast);
 }
 
-.icon.b {
-    margin: 8px 16px 8px 0px;
+.list-item--content>*:first-child, .list-item--content>*:not(:last-child) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
-.icon.c {
-    margin: 7px 16px 7px 0px;
+.list-item--icon, .list-item--avatar, .list-item--image {
+    margin: var(--space-2) var(--space-4);
+    align-self: center;
 }
 
-.icon.d {
-    margin: 7px 16px 7px -16px;
+.list-item--icon+.list-item--content, .list-item--avatar+.list-item--content, .list-item--image+.list-item--content, .list-item--large-image+.list-item--content {
+    padding-left: 0;
 }
 
-.items.three-line a {
-    align-self: baseline;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.87);
+.list-item--large-image {
+    margin: var(--space-2) var(--space-4) var(--space-2) 0;
+    align-self: center;
+}
+
+.list-item--content .list-item--content-multiple {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    white-space: pre-wrap;
 }

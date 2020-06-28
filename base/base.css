@@ -4,9 +4,9 @@
     --color-white: #ffffff;
     --color-black: #000000;
     /* contrast colors */
-    --color-low-contrast: #504f4f;
-    --color-high-contrast: #ececec;
-    --color-reduce-contrast: #747474;
+    --color-low-contrast: #F3F3F3;
+    --color-high-contrast: #5A5E6F;
+    --color-reduce-contrast: #D9D9D9;
     /* base color */
     --color-base-darker: #3d038d;
     --color-base-dark: #5100c2;
