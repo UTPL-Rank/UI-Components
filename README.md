@@ -8,6 +8,7 @@ Styled components in html and css
 - [Buttons](https://utpl-rank.github.io/UI-Components/components/buttons/)
 - [Cards](https://utpl-rank.github.io/UI-Components/components/card/)
 - [Fabs](https://utpl-rank.github.io/UI-Components/components/fabs/)
+- [List](https://utpl-rank.github.io/UI-Components/components/list/)
 - [Tooltips](https://utpl-rank.github.io/UI-Components/components/tooltip/)
 - [Indicator](https://utpl-rank.github.io/UI-Components/components/indicator/)
 - [Snackbar](https://utpl-rank.github.io/UI-Components/components/snackbar/)
