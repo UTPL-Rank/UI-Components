@@ -1,0 +1,59 @@
+.list {
+    margin: 40px;
+    width: 360px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.list-item {
+    display: flex;
+    padding-left: 16px;
+    margin-top: 24px;
+}
+
+.list-item--text {
+    display: flex;
+    padding: 16px 16px 16px 0px;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item--text.list-divider {
+    border-bottom: 1px solid rgba(33, 33, 33, 0.08);
+}
+
+.list-item--text a {
+    margin-left: 16px;
+}
+
+.more-lines {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon.a {
+    margin: 16px 32px 16px 0px;
+}
+
+.icon.b {
+    margin: 8px 16px 8px 0px;
+}
+
+.icon.c {
+    margin: 7px 16px 7px 0px;
+}
+
+.icon.d {
+    margin: 7px 16px 7px -16px;
+}
+
+.items.three-line a {
+    align-self: baseline;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+}
