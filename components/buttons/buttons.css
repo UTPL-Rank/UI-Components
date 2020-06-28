@@ -37,7 +37,7 @@
 }
 
 .button:hover, .button:hover {
-    --button-background-color: var(--color-high-contrast);
+    --button-background-color: var(--color-reduce-contrast);
     --button-text-color: var(--color-black);
 }
 
@@ -92,18 +92,18 @@
 
 .button-outline {
     --button-background-color: transparent;
-    --button-border-color: var(--color-high-contrast);
+    --button-border-color: var(--color-reduce-contrast);
     --button-text-color: var(--color-black);
 }
 
 .button-outline:hover, .button-outline:hover {
-    --button-background-color: var(--color-high-contrast);
-    --button-border-color: var(--color-reduce-contrast);
+    --button-background-color: var(--color-reduce-contrast);
+    --button-border-color: var(--color-high-contrast);
 }
 
 .button-outline.button-primary {
     --button-background-color: transparent;
-    --button-border-color: var(--color-high-contrast);
+    --button-border-color: var(--color-reduce-contrast);
     --button-text-color: var(--color-primary);
 }
 
@@ -114,7 +114,7 @@
 
 .button-outline.button-warn {
     --button-background-color: transparent;
-    --button-border-color: var(--color-high-contrast);
+    --button-border-color: var(--color-reduce-contrast);
     --button-text-color: var(--color-warn);
 }
 
@@ -125,7 +125,7 @@
 
 .button-outline.button-danger {
     --button-background-color: transparent;
-    --button-border-color: var(--color-high-contrast);
+    --button-border-color: var(--color-reduce-contrast);
     --button-text-color: var(--color-danger);
 }
 
@@ -136,7 +136,7 @@
 
 .button-outline:disabled, .button-outline.disabled {
     --button-background-color: transparent;
-    --button-border-color: var(--color-danger-lighter);
+    --button-border-color: var(--color-reduce-contrast);
     --button-text-color: var(--color-reduce-contrast);
     pointer-events: none;
 }
@@ -148,7 +148,7 @@
 /*  */
 
 .button-contained {
-    --button-background-color: var(--color-low-contrast);
+    --button-background-color: var(--color-high-contrast);
     --button-border-color: var(--color-low-contrast);
     --button-text-color: var(--color-white);
 }
