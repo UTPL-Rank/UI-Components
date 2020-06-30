@@ -5,6 +5,8 @@
     display: flex;
     flex-direction: column;
     border-radius: var(--card-border-radius);
+    color: var(--color-low-contrast);
+    width: 100%;
 }
 
 /*Encabezado de la carta- header card*/
@@ -22,14 +24,6 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-}
-
-.card .titles h2 {
-    color: var(--color-black);
-}
-
-.card .titles span {
-    color: var(--color-low-contrast);
 }
 
 /*icon header card*/

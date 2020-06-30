@@ -1,7 +1,7 @@
 .tooltip {
   --tooltip-max-width: 170px;
   --tooltip-text-color: var(--color-white);
-  --tooltip-background-color: var(--color-low-contrast);
+  --tooltip-background-color: var(--color-high-contrast);
   --tooltip-space-top: var(--space-n-3);
   --tooltip-space-left: var(--space-n-3);
   --tooltip-space-right: var(--space-n-3);
