@@ -1,0 +1,47 @@
+
+.contenedor{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    border: 1px solid rgba(0, 0, 0, 0.300);
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+td,th{
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    padding: 10px;
+    
+}
+
+
+.Header_proyect{
+    align-self: flex-end;
+    width: 400px;
+    text-align: center; 
+}
+
+
+.mentor-data{
+    width: 80%;
+}
+.mentor-data th{
+    text-align: left;
+} 
+
+
+.detail{
+    width: 100%;
+}
+
+.detail td{
+    vertical-align: top;
+}
+.detail th{
+    background: rgb(194, 185, 185);;
+}
+
