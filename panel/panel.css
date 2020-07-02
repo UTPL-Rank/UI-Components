@@ -1,0 +1,42 @@
+.content{
+    float: right;
+    padding: 10px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.content-one, .content-two{
+    justify-content: space-between;
+    border-radius: var(--card-border-radius);
+    width: 300px;
+    margin: 40px;
+    
+}
+
+
+
+section{
+    float: right;
+    padding: inherit;
+    margin-top: var(--space-1);
+    margin-bottom: var(--space-1); 
+}
+.panel-cart{
+    flex-direction: row;
+    padding: var(--space-10);
+    /*overflow: hidden ;
+    /*background-color: black;*/
+}
+
+
+.contenido{
+    float: left;
+    padding: 10px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+
+
+.contenedor{
+    float: left;
+}

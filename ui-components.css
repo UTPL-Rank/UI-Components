@@ -12,3 +12,6 @@
 @import url('./components/tooltip/tooltip.css');
 @import url('./components/text-field/text-field.css');
 @import url('./components/menus/menus.css');
+@import url('./components/tabs/tab.css');
+@import url('./components/Indicators/ActionBar.js');
+@import url('./components/Indicators/Indicator.css');

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+    <link href="../ui-components.js">
+    <link rel="stylesheet" type="text/css" href="panel.css">
+    <link rel="stylesheet" type="text/css" href="../ui-components.css">
+
+</head>
+
+<body>
+<div>
+<!-------------- Tabs --------------------------------------------->
+    <div class="tabs tab-scrollable">
+        <a href="#" class="tab-item active uno">
+            <svg height="24" width="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 22c1.1 0 2-.9 2-2h-4a2 2 0 002 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
+                    fill="#fff" /></svg>
+            Inicio
+        </a>
+        <a href="#" class="tab-item disabled">
+            
+        </a>
+        </a>
+        <a class="tab-item dos" href="#">
+            <svg height="24" width="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 22c1.1 0 2-.9 2-2h-4a2 2 0 002 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
+                    fill="#fff" /></svg>
+            Cuenta
+        </a>
+        <a class="tab-item dos" href="#">
+            <svg height="24" width="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 22c1.1 0 2-.9 2-2h-4a2 2 0 002 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
+                    fill="#fff" /></svg>
+            Opciones
+        </a>
+    </div>
+
+    <!-------------- Nueva supcriccion --------------------------------------------->
+    <div class="content">
+        <div class="content-one">
+            <h3 class="text-title">Nueva suscripcion</h3>
+            <br>    
+            <div class="dialog-content">
+                <div class="text-field">
+                    <div class="text-field-outline">
+                        <label for="">Usuario</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <button class="text-button button">
+                            <i class="fas fa-lock-open">Aceptar</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="content-two">
+            <h3 class="text-title">Iniciar sesion</h3>
+            <br>    
+            <div class="dialog-content">
+                <div class="text-field">
+                    <div class="text-field-outline">
+                        <label for="">Usuario</label>
+                        <input type="text">
+                    </div>
+                    <div class="text-field-outline">
+                        <label for="">Contraseña</label>
+                        <input type="password">
+                    </div>
+                    <div>
+                        <button class="text-button button">
+                            <i class="fas fa-lock-open">Aceptar</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-------------- Paneles de carta y menus --------------------------------------------->
+    <div class="panel-cart">
+        <section>
+            <div class="dialog transition-shadow shadow-3 hover:shadow-24">
+                <div class="dialog-header-center">
+                    <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z"
+                            fill="#6200EE" />
+                    </svg>
+                    <h3 class="text-title">Area Administrativa</h3>
+                    <h4 class="text-subtitle">
+                        <div class="tooltip tooltip-top" data-tooltip="Izquierdo Montoya Gonzalo Leonardo, Econ.">
+                            Tutor de area
+                        </div>
+                </div>
+                <div class="dialog-content">
+                    <spam>
+                        La administración es aquella parte, 
+                        que en un organismo público o en una compañía de 
+                        capitales privados se ocupa de gestionar todos los 
+                        recursos que están implicados en su estructura y 
+                        por ende en su funcionamiento.
+                    </spam>
+                </div>
+                <div class="dialog-actions">
+                    <button class="text-button button-contained shadow-5  transition-shadow hover:shadow-12">Preguntas</button>
+
+                    <div class="dialog-actions dropdown">
+                        <button class="text-button button-outline button-primary">Carreras</button>
+                        <div class="dropdown-content shadow-3">
+                            <a href="#" class="dropdown-item">
+                                <span class="item-label">Ciencias empresariales</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="item-label">Economia</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <section>
+            <div class="dialog transition-shadow shadow-3 hover:shadow-24">
+                <div class="dialog-header-center">
+                    <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z"
+                        fill="#6200EE" />
+                    </svg>
+                    <h3 class="text-title">Area Biologica</h3>
+                    <h4 class="text-subtitle">
+                        <div class="tooltip tooltip-top" data-tooltip="Malagón Áviles Omar Germán, Ph.D.">
+                            Tutor de area
+                        </div>
+                    </h4>
+                </div>
+                <div class="dialog-content">
+                    <spam>
+                        Las ciencias biológicas son aquellas que se dedican
+                        a estudiar la vida y sus procesos. se trata de 
+                        una rama de las ciencias naturales que investiga 
+                        el origen, la evolución 
+                        y las propiedades de los seres vivos.
+                    </spam>
+                </div>
+                <div class="dialog-actions">
+                    <button class="text-button button-contained shadow-5  transition-shadow hover:shadow-12">Preguntas</button>
+
+                    <div class="dialog-actions dropdown">
+                        <button class="button button-primary">Carreras</button>
+                        <div class="dropdown-content shadow-3">
+                            <a href="#" class="dropdown-item">
+                                <span class="item-label">Ciencias Biologicas</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="item-label">Quimica</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="dialog transition-shadow shadow-3 hover:shadow-24">
+                <div class="dialog-header-center">
+                    <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z"
+                            fill="#6200EE" />
+                    </svg>
+                    <h3 class="text-title">Area Socio-Humanistica</h3>
+                    <h4 class="text-subtitle">
+                        <div class="tooltip tooltip-top" data-tooltip="Rivera Rogel Diana Elizabeth, Ph.D.">
+                            Tutor de area
+                        </div>
+                </h4>
+                </div>
+                <div class="dialog-content">
+                    <spam>
+                        La area Socio-Humanistica abarca las carreras comunicacion,
+                        periodismo, derecho, Educacion (Licenciatura), Psicologia y
+                        ciencias sociales y de comportamiento.
+                    </spam>
+                </div>
+                <div class="dialog-actions">
+                    <button class="text-button button-contained shadow-5  transition-shadow hover:shadow-12">Preguntas</button>
+
+                    <div class="dialog-actions dropdown">
+                        <button class="button button-primary">Carreras</button>
+                        <div class="dropdown-content shadow-3">
+                            <a href="#" class="dropdown-item">
+                                <span class="item-label">C. Educacion</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="item-label">C. Juridicas</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="item-label">C. Comunicacion</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="item-label">Psicologia</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="dialog transition-shadow shadow-3 hover:shadow-24">
+                <div class="dialog-header-center">
+                    <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z"
+                        fill="#6200EE" />
+                    </svg>
+                    <h3 class="text-title">Area Tecnica</h3>
+                    <h4 class="text-subtitle">
+                        <div class="tooltip tooltip-top" data-tooltip="Correa Jaramillo Ramiro Alberto, Mgs.">
+                            Tutor de area
+                        </div>
+                    </h4>
+                </div>
+                <div class="dialog-content">
+                    <spam>
+                        La area tecnica abarca todo lo que tiene que ver sobre
+                        lo tecnologico, ya sea, diseño 3D, desarrollo de sofware,
+                        arquitectura y artes, electronica,entre otros. 
+                    </spam>
+                </div>
+                <div class="dialog-actions">
+                    <button class="text-button button-contained shadow-5  transition-shadow hover:shadow-12">Preguntas</button>
+
+                    <div class="dialog-actions dropdown">
+                        <button class="button button-primary">Carreras</button>
+                        <div class="dropdown-content shadow-3">
+                            <a href="#" class="dropdown-item">
+                                <span class="item-label">Arquitectura</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="item-label">Arte</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="item-label">Ciencias de la computacion </span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="item-label">Electronica</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="item-label">Geologia</span>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+<!------------ Estadisticas -------------------------------------------------------------->    
+    <div class="contenedor">
+        <h6>Preguntas correctas 50%:</h6>
+        <progress class="progreso secundary" value="50" min="0" max="100"></progress>
+        <br>
+        <h6>Preguntas incorrectas 50%:</h6>
+        <progress class="progreso secundary" value="50" min="0" max="100"></progress>
+        <br>
+        <h6>Preguntas respondidas 100%:</h6>
+        <progress class="progreso secundary" value="100" min="0" max="100"></progress>
+    </div>
+
+<!-------- Preguntas ------------------------------------------------------------------------------>
+    <div>
+
+    </div>
+
+</body>
+</html>
