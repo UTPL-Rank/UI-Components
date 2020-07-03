@@ -1,42 +1,59 @@
 .content{
-    float: right;
-    padding: 10px;
-    overflow: hidden;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
 }
-.content-one, .content-two{
+.content-one{
+    display: block;
+    flex-direction: column;
+    background: var(--color-primary);
+    height: 990px;
+    width: 305px;
+    flex-grow: 1;
+}
+
+.circle{
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+}
+
+
+
+.content-two{
+    height: 45px;
+    width: 100%;
+    background-color: var(--color-base-lighter);
+  
+    display:flex;
     justify-content: space-between;
-    border-radius: var(--card-border-radius);
-    width: 300px;
-    margin: 40px;
+    align-items: center;
+}
+.contenido{
+    display:flex;
+    align-items: center;
+}
+
+.button-class{
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.final-button-final{
+    display: flexbox;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.final-final{
+    text-align: start;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 1;
     
 }
 
 
-
-section{
-    float: right;
-    padding: inherit;
-    margin-top: var(--space-1);
-    margin-bottom: var(--space-1); 
-}
-.panel-cart{
-    flex-direction: row;
-    padding: var(--space-10);
-    /*overflow: hidden ;
-    /*background-color: black;*/
-}
-
-
-.contenido{
-    float: left;
-    padding: 10px;
-    overflow: hidden;
-    justify-content: space-between;
-}
-
-
-
-.contenedor{
-    float: left;
-}
