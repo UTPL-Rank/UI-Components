@@ -1,10 +1,8 @@
 .banner-base {
     --banner-width: 450px;
-    --banner-margin: var(--space-5);
     --banner-padding: var(--space-4);
     width: var(--banner-width);
     display: flex;
-    margin: var(--banner-margin);
     background: var(--color-white);
     padding: var(--banner-padding);
 }
