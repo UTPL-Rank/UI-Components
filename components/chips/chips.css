@@ -5,10 +5,15 @@
     padding: var(--space-1) var(--space-2);
     border-radius: 99999px;
     background: var(--color-reduce-contrast);
+    flex-wrap: nowrap;
 }
 
 .chip>*:not(:last-child) {
     margin-right: var(--space-1);
+}
+
+.chip>* {
+    white-space: nowrap;
 }
 
 .chip>button {
