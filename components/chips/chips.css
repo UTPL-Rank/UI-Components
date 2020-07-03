@@ -2,12 +2,13 @@
     display: flex;
     align-items: center;
     width: min-content;
-    padding: 6px 8px;
-    border-radius: 16px;
+    padding: var(--space-1) var(--space-2);
+    border-radius: 99999px;
+    background: var(--color-reduce-contrast);
 }
 
 .chip>*:not(:last-child) {
-    margin-right: 8px;
+    margin-right: var(--space-1);
 }
 
 .chip>button {
@@ -15,23 +16,6 @@
     padding: 0;
     border: none;
     line-height: 0;
-}
-
-.chip-enable {
-    background: var(--color-enable);
-}
-
-.chip-hover {
-    background: var(--color-hover);
-}
-
-.chip-focus {
-    background: var(--color-focus);
-}
-
-.chip-ACTIVE {
-    color: #6200EE;
-    background: rgba(98, 0, 238, 0.08);
 }
 
 .chip-hover:hover:not(:disabled), .chip-hover:hover:not(:disabled), .chip-hover:hover:not(:disabled), .chip-hover:hover:not(:disabled), .chip-hover:hover:not(.disabled), .chip-hover:hover:not(.disabled), .chip-hover:hover:not(.disabled), .chip-hover:hover:not(.disabled) {
@@ -44,9 +28,7 @@
 }
 
 .chip.disabled {
-    float: none;
-    align-self: flex-end;
-    color: var(--color-disabled);
+    color: var(--color-low-contrast);
     pointer-events: none;
     background-color: transparent;
     border: none;
