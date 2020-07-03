@@ -4,6 +4,7 @@
 @import url('./base/elevation.css');
 @import url('./components/banner/banner.css');
 @import url('./components/buttons/buttons.css');
+@import url('./components/chips/chips.css');
 @import url('./components/card/card.css');
 @import url('./components/dialog/dialog.css');
 @import url('./components/fabs/fabs.css');
@@ -13,5 +14,4 @@
 @import url('./components/text-field/text-field.css');
 @import url('./components/menus/menus.css');
 @import url('./components/tabs/tab.css');
-@import url('./components/Indicators/ActionBar.js');
 @import url('./components/Indicators/Indicator.css');
