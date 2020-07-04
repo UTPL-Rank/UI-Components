@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,101 +8,104 @@
     <link href="../ui-components.js">
     <link rel="stylesheet" type="text/css" href="panel.css">
     <link rel="stylesheet" type="text/css" href="../ui-components.css">
+    <script src="https://kit.fontawesome.com/fa1c616d6e.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <div>
-        <div class="content">
-            <div class="content-one">
-                <h1>Cuenta del Usuario</h1>
-                
-                <hr>
-                <br>
-                <div class="circle-circle">
-                    <!---- image --------------->
-                    <img class="circle" src="https://scontent.floh1-1.fna.fbcdn.net/v/t1.0-9/90780065_2911455942280458_5457433102701821952_o.jpg?_nc_cat=109&_nc_sid=85a577&_nc_ohc=vhJVGRAl-jsAX_qBztd&_nc_ht=scontent.floh1-1.fna&oh=c8d0e9a93008e19d16ae519ac8ef7354&oe=5F2551B0">
-                </div>
-                <br>
-                <!---- profile -------------->
-                <p class="text-title">Mario Isaac Calva A.</p>
-                <p class="text-subtitle">micalva@utpl.edu.ec</p> 
-                <br>
-                <div>
-                    
-                    <!--- buttons menu --------->
-                    <button class="text-button button">Preguntas realizadas</button>
-                    <br>
-                    <button class="text-button button">Editar perfil</button>
-                    <hr>
-                    <button class="text-button button">Inicio</button>
-                    <br>
-                    <div class="links">
-                        <!---- links ------------>
-                        <a class="links-links" href="#">AREAS ACADEMICAS</a>
-                        <a class="links-links" href="#">TITULACIONES</a>
-                        <a class="links-links" href="#">AREAS DE CONOCIMIENTO</a>
-                    </div>
+    <div class="dashboard">
+        <aside class="sidebar shadow-3">
 
-                </div>
-                <br>
-                <!------- log off button -------------------->
-                  
-                <div class="final-button-final">
-                    <div class="final-final">
-                        <button class="text-button button-contained button-primary">Cerrar secion</button>
-                    </div>
-                </div>
-                
-                
+            <!-- information of the user -->
+            <div class="user">
+
+                <h1 class="text-headline">
+                    UTPL Rank
+                </h1>
+
+                <h3 class="text-subtitle">
+                    Panel De Control
+                </h3>
+
+                <!---- user avatar --------------->
+                <img class="avatar"
+                    src="https://s3.amazonaws.com/images.seroundtable.com/google-css-images-1515761601.jpg">
+
+                <!-- username -->
+                <h2 class="username text-title">
+                    Mario Isaac Calva A.
+                </h2>
+
+                <!-- user email -->
+
+                <a href="mailto:micalva@utpl.edu.ec" class="text-caption">
+                    micalva@utpl.edu.ec
+                </a>
             </div>
-            
-            <div class="content-two">
-                <div class="contenido">
-                    
-                    <div class="tabs-open">
-                        <div class="chip-list">
-                            <div class="chip chip-enable">
-                                <!--- open tabs ------------>
-                                <button class="button " onclick="this.parentElement.style.display='none'">
-                                    <span>Inicio</span>
-                                </button>
-                            </div>   
-                        </div>
-                    </div>
-            
-                    <div class="tabs-open">
-                        <div class="chip-list">
-                            <div class="chip chip-enable">
-                                <!--- open tabs ------------>
-                                <button class="button " onclick="this.parentElement.style.display='none'">
-                                    <span>Opciones</span>
-                                    
-                                </button>
-                            </div>   
-                        </div>
-                    </div>
-                
-                    <div class="tabs-open">
-                        <div class="chip-list">
-                            <div class="chip chip-enable">
-                                <!--- open tabs ------------>
-                                <button class="button " onclick="this.parentElement.style.display='none'">
-                                    <span>Cuenta</span>
-                                </button>
-                            </div>   
-                        </div>
-                    </div>
-                </div>    
+            <!-- end information -->
 
-                <!----- button setting --------------------->
-                    <button class="text-button button-outline">
-                        Configuracion
-                    </button>
+            <!-- main navigation of the page -->
+            <nav class="navigation">
+                <a href="#" class="button-contained button-primary">
+                    <i class="fas fa-book-open"></i>
+                    ÁREAS ACADÉMICAS
+                </a>
+
+                <a href="#" class="button-contained button-primary">
+                    <i class="fas fa-graduation-cap"></i>
+                    TITULACIONES
+                </a>
+
+                <a href="#" class="button-contained button-primary">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    Temáticas
+                </a>
+                <a href="#" class="button-contained button-primary">
+                    <i class="fas fa-users"></i>
+                    Usuarios
+                </a>
+
+                <a class="button-contained button-primary logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Cerrar sección
+                </a>
+            </nav>
+        </aside>
+
+        <nav class="top-bar shadow-3">
+            <div class="breadcrumbs">
+                <div class="chip chip-enable">
+                    <!-- chip text -->
+                    <span>
+                        Áreas Académicas
+                    </span>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+                <div class="chip chip-enable">
+                    <!-- chip text -->
+                    <span>
+                        Áreas Técnica
+                    </span>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+                <div class="chip chip-enable">
+                    <!-- chip text -->
+                    <span>
+                        Editar
+                    </span>
+                </div>
             </div>
-        </div>
-
+            <!----- button setting --------------------->
+            <button class=" button-outline">
+                <i class="fas fa-cog"></i>
+                Configuración
+            </button>
+        </nav>
+        <main class="main-content">
+            asdfa sdfasdfasdd fasdf asdf asdf asdf asdf asdffa
+        </main>
     </div>
 
 </body>
+
 </html>

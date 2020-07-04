@@ -60,6 +60,7 @@ p, .text-body1 {
     font-size: 0.875rem;
     text-transform: uppercase;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 small, .text-caption, .tooltip[data-tooltip]::before {
