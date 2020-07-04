@@ -7,6 +7,10 @@
     height: 100vh;
 }
 
+.dashboard.close {
+    grid-template-columns: 54px 1fr;
+}
+
 .sidebar {
     grid-area: sidebar;
     width: 100%;
@@ -18,7 +22,11 @@
     z-index: 50;
 }
 
-.sidebar .user {
+.dashboard.close .sidebar .app-name, .dashboard.close .sidebar .panel-name {
+    display: none;
+}
+
+.dashboard .sidebar .user {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,11 +34,15 @@
     color: white;
 }
 
-.sidebar .user>*:not(:last-child) {
+.dashboard.close .sidebar .user {
+    margin: 8px;
+}
+
+.dashboard:not(.close) .sidebar .user>*:not(:last-child) {
     margin-bottom: 20px;
 }
 
-.sidebar .user .username {
+.dashboard .sidebar .user .username {
     white-space: nowrap;
     width: 100%;
     text-align: center;
@@ -38,11 +50,19 @@
     text-overflow: ellipsis;
 }
 
-.sidebar .user a {
+.dashboard.close .sidebar .user .username {
+    display: none;
+}
+
+.dashboard .sidebar .user a {
     color: white;
 }
 
-.sidebar .avatar {
+.dashboard.close .sidebar .user a {
+    display: none;
+}
+
+.dashboard .sidebar .avatar {
     border-radius: 9999px;
     width: 75px;
     height: 75px;
@@ -51,7 +71,12 @@
     object-position: center;
 }
 
-.sidebar .navigation {
+.dashboard.close .sidebar .avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.dashboard .sidebar .navigation {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -60,10 +85,26 @@
     border-top: 1px dotted white;
 }
 
-.sidebar .navigation i {
+.dashboard.close .sidebar .navigation {
+    padding: 0;
+}
+
+.dashboard .sidebar .navigation i {
     width: 30px;
     text-align: center;
     margin-right: 16px;
+}
+
+.dashboard .sidebar .navigation a.tooltip::before {
+    display: none;
+}
+
+.dashboard.close .sidebar .navigation a.tooltip:hover::before {
+    display: block;
+}
+
+.dashboard.close .sidebar .navigation>a> :nth-child(2) {
+    display: none;
 }
 
 .sidebar .navigation .logout {
