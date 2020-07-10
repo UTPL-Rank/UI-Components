@@ -1,10 +1,14 @@
-
+body,html{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  height: 100%;
+}
 .contend_inf{
     display: flex;
     flex-direction: column;
     width: 864px;
     margin: auto;
-    margin-top: 20px;
     
 }
 .info_header{
@@ -15,7 +19,7 @@
     text-align: center;
 }
 .info_nav{
-    margin-top: 50px;
+   
     display: flex;
     flex-direction: row;
     justify-content: space-between;

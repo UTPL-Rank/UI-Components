@@ -23,11 +23,11 @@ textarea{
     
 }
 .container_ .input-area:focus{
-    border: 2px solid #6200EE;;
+    border: 2px solid var(--color-primary);
     
 }
 .container_ .input-area:focus + .label{
-    color: #6200EE;
+    color: var(--color-primary);
 }
 
 
