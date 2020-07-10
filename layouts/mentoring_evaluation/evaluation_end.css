@@ -1,0 +1,37 @@
+
+.contend_inf{
+    display: flex;
+    flex-direction: column;
+    width: 864px;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+.info_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info_nav{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  .info_activities{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   
+  }
+ 
+  .item{
+    display: flex;
+    flex-direction: column; 
+    flex: auto;
+    margin: 20px;
+  }
