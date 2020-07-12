@@ -5,6 +5,7 @@
     grid-template-areas: 'sidebar top-bar' 'sidebar main';
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .dashboard.close {
@@ -141,9 +142,11 @@
     grid-area: main;
     width: 100%;
     height: 100%;
+    overflow-y: auto;
 }
 
 /******* icon electronica **************/
+
 .cls-1, .cls-2 {
     fill: none;
     stroke: #353535;
@@ -163,37 +166,17 @@
     fill: #353535;
 }
 
-.card-share{
-    grid-row: cardShare;
-}
-
-.card-share-2{
-    grid-row: cardShare2;
-}
-
-.card-share-3{
-    grid-row: cardShare3;
-}
-
-.card-share-4{
-    grid-row: cardShare4;
-}
 /************/
-
 
 .card-position {
     /*background-color: black;*/
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 50px 50px;
+}
 
-    /*grid-template-rows:
-    'cardShare cardShare2 ' 
-    'cardShare2 cardShare3' 
-    'cardShare4';*/
-
-
-    grid-gap: 20px;
-
-   padding: 50px 50px;
+.svg {
+    width: 100%;
 }
