@@ -19,6 +19,7 @@
 }
 
 .checkbox .icon {
+    position: relative;
     width: var(--space-5);
     height: var(--space-5);
     border-radius: 4px;
