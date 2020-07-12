@@ -142,3 +142,58 @@
     width: 100%;
     height: 100%;
 }
+
+/******* icon electronica **************/
+.cls-1, .cls-2 {
+    fill: none;
+    stroke: #353535;
+    stroke-linecap: round;
+    stroke-width: 2px;
+}
+
+.cls-1 {
+    stroke-linejoin: round;
+}
+
+.cls-2 {
+    stroke-miterlimit: 10;
+}
+
+.cls-3 {
+    fill: #353535;
+}
+
+.card-share{
+    grid-row: cardShare;
+}
+
+.card-share-2{
+    grid-row: cardShare2;
+}
+
+.card-share-3{
+    grid-row: cardShare3;
+}
+
+.card-share-4{
+    grid-row: cardShare4;
+}
+/************/
+
+
+.card-position {
+    /*background-color: black;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    /*grid-template-rows:
+    'cardShare cardShare2 ' 
+    'cardShare2 cardShare3' 
+    'cardShare4';*/
+
+
+    grid-gap: 20px;
+
+   padding: 50px 50px;
+}
