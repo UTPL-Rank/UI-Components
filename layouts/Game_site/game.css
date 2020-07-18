@@ -1,0 +1,178 @@
+html, body{
+    height: 100%;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    height: 100%;
+}
+/* ********** NAV APP -BUTTONS ********* */
+.nav_app{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 5%;
+    width: 80%;
+    
+}
+.nav_app h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+/* ********** HEADER APP ********* */
+.header_app{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150%;
+    
+    
+}
+.info_head{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+   
+}
+.header_detail{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 45%;
+    font-size: 40px;
+    
+}
+.header_box{
+    
+    width: 30%;
+    height: 100%;
+    background: #BDE0F9;
+    border-radius: 0px 0px 0px 50%;
+}
+.header_box img{
+    width: 450px;
+    height: 700px;
+
+    margin-top: 20%;
+    margin-left: -36%;
+}
+/* ********** BODY APP ********* */
+/* line separate sections app */
+.mode{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    width: 95%;
+    
+  }
+  .modeSub{
+    display: flex;
+   align-items: center;
+}
+  .separate{
+    margin: 0px 20px 0px 20px;
+    flex-grow: 1;
+    height: 2px;
+    background: black;
+  }
+  .area{
+    font-size: 60px;
+    font-weight: 900;
+    color: #E9E9E9;
+  }
+/* Play modes Game */
+.playmode{
+    display: flex;
+    align-items: center;
+}
+.mult{
+  display: flex;
+  justify-content: flex-end;
+   }
+   
+  .play_icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #BDE0F9;
+      border-radius: 0px 100px 0px 100px;
+      box-shadow: 0px 7px 8px rgba(95, 78, 116, 0.103), 0px 5px 22px rgba(95, 78, 116, 0.103), 0px 12px 17px rgba(32, 52, 238, 0.432);
+  }
+  .play_info{
+    font-size: 20px;
+    width: 400px;
+    margin: 0px 100px 0px 100px;
+  }
+ 
+   .mult{
+  display: flex;
+  justify-content: flex-end;
+   }
+   
+   
+   .img_mode{
+    border-radius: 0px 100px 0px 100px;
+   }
+/* Opcions Mode Game */
+    .container_opc{
+      display: flex;
+      justify-content: space-around;
+      margin: 100px;
+    }
+    .navopc{
+        display: flex;
+      }
+/* ********** FOTER APP ********* */
+
+.footer{
+     padding-top: 200px;
+     background: #EFEFEF;
+     display: flex;
+   }
+.container_end{
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    margin: auto;
+    width: 70%;
+    justify-content: center;
+    display: grid;
+    column-gap: 10px;
+    font-size: 20px;
+    row-gap: 20px;
+    grid-template-columns: repeat(5,1fr);
+  
+   }
+   .item {
+    
+     text-decoration: none;
+     display: flex; justify-content: start;}
+    .item a{
+      color: #8D8D8D;
+    }
+
+
+
+#foot{
+        display: flex;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        margin-top: -10px;
+        background: #EFEFEF;
+        color: #8D8D8D;
+       
+      }
+    .icon_opc img:hover{
+      transition: 0.3s;
+      border-radius: 20px;
+      box-shadow: 0px 7px 8px rgba(95, 78, 116, 0.103), 0px 5px 22px rgba(95, 78, 116, 0.103), 0px 12px 17px rgba(32, 52, 238, 0.432);
+    }
+    
+    
